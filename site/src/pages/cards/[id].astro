@@ -1,8 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
-import PriceCheck from '../../components/PriceCheck.astro';
+import PriceCard from '../../components/PriceCard.astro';
 import GradeBadge from '../../components/GradeBadge.astro';
-import { loadCards, loadSets, popStats, gradeStats, firstImage } from '../../lib/data';
+import { loadCards, loadSets, popStats } from '../../lib/data';
 import { url, money, dateLong, saleType, saleSource, num, pct } from '../../lib/format';
 export function getStaticPaths() {
   return loadCards().map((c) => ({ params: { id: c.card.id }, props: { card: c } }));
@@ -10,7 +10,6 @@ export function getStaticPaths() {
 const { card } = Astro.props;
 const grades = Object.keys(card.grades);
 const pops = popStats(card.pops);
-const img = firstImage(card);
 const set = loadSets().find((s) => s.code === card.card.set_code);
 const rows = grades.flatMap((grade) => card.grades[grade].sales.map((sale) => ({ grade, sale })))
   .sort((a, b) => (a.sale.date < b.sale.date ? 1 : a.sale.date > b.sale.date ? -1 : 0)).slice(0, 40);
@@ -23,20 +22,14 @@ const checked = Object.values(card.grades).map((g) => g.last_checked).filter(Boo
     <a href={url('/')}>Home</a> / <a href={url(`/sets/${card.card.set_code.toLowerCase()}/`)}>{set?.name ?? card.card.set}</a> / <span>{card.card.name} #{card.card.number}</span>
   </nav>
 
-  <section class="card-hero">
-    <div class="art">{img ? <img src={url('/' + img)} alt={`${card.card.name} graded slab`} /> : <div class="muted small">No photo</div>}</div>
-    <div>
-      <div class="eyebrow">{card.card.set} · #{card.card.number} · {card.card.variant}</div>
-      <h1 class="page-title">{card.card.name}</h1>
-      {card.card.title && <div class="subtitle">{card.card.title}</div>}
-      <div class="grades">{grades.map((g) => <GradeBadge grade={g} long />)}</div>
-      {card.card.notes && <p class="note small">{card.card.notes}</p>}
-      <div class="small muted" style="margin-top:12px">Data checked {dateLong(checked)} · populations as of {dateLong(card.pops?.as_of)}</div>
-    </div>
-  </section>
+  <div class="head-line">
+    <div class="eyebrow">{card.card.set} · #{card.card.number} · {card.card.variant}</div>
+    <div class="small muted">Data checked {dateLong(checked)} · populations as of {dateLong(card.pops?.as_of)}</div>
+  </div>
+  {card.card.notes && <p class="note small">{card.card.notes}</p>}
 
   <div class="columns">
-    {grades.map((g) => <PriceCheck card={card} grade={g} />)}
+    {grades.map((g) => <PriceCard card={card} grade={g} full />)}
   </div>
 
   {pops.length > 0 && (
@@ -81,12 +74,7 @@ const checked = Object.values(card.grades).map((g) => g.last_checked).filter(Boo
 
 <style>
   .crumbs { padding-top: 16px; }
-  .card-hero { display: grid; grid-template-columns: 96px 1fr; gap: 20px; align-items: center; padding: 20px 0 24px; }
-  .card-hero .art { aspect-ratio: 3 / 4; border-radius: 10px; background: #0a1220; overflow: hidden; display: grid; place-items: center; }
-  .card-hero .art img { width: 100%; height: 100%; object-fit: contain; }
-  .subtitle { color: var(--gold); font-weight: 600; font-size: 18px; margin-top: 4px; }
-  .grades { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
-  @media (min-width: 720px) { .card-hero { grid-template-columns: 140px 1fr; } }
+  .head-line { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; padding: 16px 0; }
   .columns { display: grid; gap: 16px; grid-template-columns: 1fr; }
   @media (min-width: 900px) { .columns { grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); } }
   .gem-row { display: grid; grid-template-columns: auto 1fr auto; gap: 8px 14px; align-items: center; padding: 8px 0; }

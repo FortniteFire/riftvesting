@@ -1,0 +1,110 @@
+---
+// Price Check panel for one card × grade — the same layout as the @Riftvesting infographics.
+// compact (default): home page grid. full: card page column with a larger chart.
+import type { Card } from '../lib/data';
+import { gradeStats, gradeLabel, popStats, graderOf, loadSets, firstImage } from '../lib/data';
+import { url, money, dateLong, dateShort, saleType, saleSource, num } from '../lib/format';
+import GradeBadge from './GradeBadge.astro';
+import Change from './Change.astro';
+import Sparkline from './Sparkline.astro';
+interface Props { card: Card; grade: string; full?: boolean; kicker?: string }
+const { card, grade, full = false, kicker } = Astro.props;
+const g = card.grades[grade];
+const s = gradeStats(g);
+const grader = graderOf(grade);
+const gradeNum = grade.split(' ')[1];
+const pop = popStats(card.pops).find((p) => p.grader === grader);
+const thisPop = card.pops?.[grader]?.[gradeNum];
+const img = g.image ?? firstImage(card);
+const set = loadSets().find((x) => x.code === card.card.set_code);
+const numberText = `#${card.card.number}${set?.size ? '/' + set.size : ''}`;
+const variantShort = card.card.variant.replace('Signature Overnumber', 'Signature');
+const sub = [card.card.title, variantShort].filter(Boolean).join(' ');
+const auctions = s.window.filter((x) => x.type === 'auction').length;
+const color = ({ PSA: '#23d6b5', BGS: '#d9b96b', CGC: '#5aa2ff' } as Record<string, string>)[grader] ?? '#9aa3b5';
+const showLabels = s.n <= (full ? 24 : 10);
+const href = url(`/cards/${card.card.id}/`);
+---
+<article class:list={['pcard', { full }]}>
+  <header class="pcard-head">
+    <a class="art" href={href}>{img ? <img src={url('/' + img)} alt={`${card.card.name} slab`} loading="lazy" /> : <span class="muted small">No photo</span>}</a>
+    <div class="who">
+      <div class="row-badge"><GradeBadge grade={grade} long />{kicker && <span class="kicker">{kicker}</span>}</div>
+      <h3 class="name"><a href={href}>{card.card.name}</a></h3>
+      {sub && <div class="sub">{sub}</div>}
+      <div class="meta muted">{card.card.set} · {numberText}</div>
+      <div class="meta muted">{thisPop != null && pop ? `${gradeLabel(grade) || grade} pop ${num(thisPop)} / ${num(pop.total)} graded` : 'Population not available'}</div>
+    </div>
+  </header>
+
+  {s.last ? (
+    <div class="pcard-price">
+      <div>
+        <div class="price-big">{money(s.last.price)}</div>
+        <div class="price-sub">{saleType(s.last.type)} · {saleSource(s.last.source)} · {dateLong(s.last.date)}</div>
+      </div>
+      <div class="changes">
+        <Change value={s.vsPrev} label="vs last sale" />
+        <Change value={s.vs30} label={s.ref30 ? `since ${dateShort(s.ref30.date)}` : 'no earlier sale'} />
+      </div>
+    </div>
+  ) : (
+    <p class="muted">No completed sales recorded yet.</p>
+  )}
+
+  {s.window.length > 0 && (
+    <div class="pcard-chart">
+      <div class="chart-head">
+        <span class="small"><strong>{s.n} sales</strong> <span class="muted">· {s.windowFrom === s.windowTo ? dateLong(s.windowTo) : `${dateShort(s.windowFrom)} – ${dateLong(s.windowTo)}`}</span></span>
+        <span class="legend"><span><i class="dot-fill"></i>Auction{full ? ` (${auctions})` : ''}</span><span><i class="dot-hollow"></i>Buy now / Best offer{full ? ` (${s.n - auctions})` : ''}</span></span>
+      </div>
+      {full ? (
+        <>
+          <div class="chart-desk"><Sparkline sales={s.window} color={color} labels={showLabels} /></div>
+          <div class="chart-mob"><Sparkline sales={s.window} width={360} height={200} small color={color} labels={showLabels && s.n <= 10} /></div>
+        </>
+      ) : (
+        <Sparkline sales={s.window} width={380} height={200} small color={color} labels={showLabels} />
+      )}
+    </div>
+  )}
+
+  <div class="stats">
+    <div><div class="k">High</div><div class="v">{money(s.high)}</div></div>
+    <div><div class="k">Low</div><div class="v">{money(s.low)}</div></div>
+    <div><div class="k">Average</div><div class="v">{money(s.avg)}</div></div>
+    <div><div class="k">Median</div><div class="v">{money(s.median)}</div></div>
+  </div>
+  {full && <div class="small muted" style="margin-top:6px">Stats cover the {s.windowLabel}.</div>}
+
+  {full && g.alt_value && (
+    <div class="alt">
+      <div><span class="k">ALT value</span> <strong>{money(g.alt_value.value)}</strong> <span class="muted">{money(g.alt_value.low)} – {money(g.alt_value.high)}</span></div>
+      {g.alt_url && <a class="small" href={g.alt_url} rel="noopener">Sales history on ALT</a>}
+    </div>
+  )}
+</article>
+
+<style>
+  .pcard { background: linear-gradient(180deg, #13223a, #0f1b31); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; display: flex; flex-direction: column; }
+  .pcard-head { display: grid; grid-template-columns: 72px 1fr; gap: 14px; align-items: start; }
+  .full .pcard-head { grid-template-columns: 96px 1fr; }
+  .art { aspect-ratio: 3 / 4; border-radius: 8px; background: #0a1220; overflow: hidden; display: grid; place-items: center; }
+  .art img { width: 100%; height: 100%; object-fit: contain; }
+  .row-badge { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .kicker { color: var(--muted); font-size: 12px; }
+  .name { font-size: 24px; font-weight: 800; margin-top: 8px; }
+  .full .name { font-size: 32px; }
+  .sub { color: var(--gold); font-weight: 600; font-size: 14px; }
+  .meta { font-size: 13px; }
+  .pcard-price { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 10px 20px; margin-top: 16px; }
+  .pcard:not(.full) .price-big { font-size: 38px; }
+  .changes { display: grid; gap: 2px; text-align: right; }
+  .pcard-chart { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .chart-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; margin-bottom: 6px; }
+  .chart-mob { display: none; }
+  @media (max-width: 640px) { .chart-desk { display: none; } .chart-mob { display: block; } }
+  .alt { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 14px; }
+  .alt .k { color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; margin-right: 6px; }
+  .pcard:not(.full) .stats .v { font-size: 16px; }
+</style>
