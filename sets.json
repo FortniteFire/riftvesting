@@ -1,0 +1,1224 @@
+{
+ "updated": "2026-09-05",
+ "sources": {
+  "overnumbers": "tcgwatchtower.com set lists, fetched 2026-09-05",
+  "promos": "tracked cards only; complete from PSA population report"
+ },
+ "sets": [
+  {
+   "code": "OGN",
+   "name": "Origins",
+   "released": "2025-10-31",
+   "size": 298,
+   "sections": [
+    {
+     "key": "signature",
+     "label": "Signature Overnumbers",
+     "slots": [
+      {
+       "number": "299*",
+       "name": "Kai'Sa",
+       "title": "Daughter of the Void",
+       "card_id": null
+      },
+      {
+       "number": "300*",
+       "name": "Volibear",
+       "title": "Relentless Storm",
+       "card_id": "ogn-300-volibear-signature-overnumber"
+      },
+      {
+       "number": "301*",
+       "name": "Jinx",
+       "title": "Loose Cannon",
+       "card_id": "ogn-301-jinx-signature-overnumber"
+      },
+      {
+       "number": "302*",
+       "name": "Darius",
+       "title": "Hand of Noxus",
+       "card_id": "ogn-302-darius-signature-overnumber"
+      },
+      {
+       "number": "303*",
+       "name": "Ahri",
+       "title": "Nine-Tailed Fox",
+       "card_id": null
+      },
+      {
+       "number": "304*",
+       "name": "Lee Sin",
+       "title": "Blind Monk",
+       "card_id": null
+      },
+      {
+       "number": "305*",
+       "name": "Yasuo",
+       "title": "Unforgiven",
+       "card_id": null
+      },
+      {
+       "number": "306*",
+       "name": "Leona",
+       "title": "Radiant Dawn",
+       "card_id": null
+      },
+      {
+       "number": "307*",
+       "name": "Teemo",
+       "title": "Swift Scout",
+       "card_id": null
+      },
+      {
+       "number": "308*",
+       "name": "Viktor",
+       "title": "Herald of the Arcane",
+       "card_id": null
+      },
+      {
+       "number": "309*",
+       "name": "Miss Fortune",
+       "title": "Bounty Hunter",
+       "card_id": "ogn-309-miss-fortune-signature-overnumber"
+      },
+      {
+       "number": "310*",
+       "name": "Sett",
+       "title": "The Boss",
+       "card_id": "ogn-310-sett-signature-overnumber"
+      }
+     ]
+    },
+    {
+     "key": "overnumber",
+     "label": "Overnumbers",
+     "slots": [
+      {
+       "number": "299",
+       "name": "Kai'Sa",
+       "title": "Daughter of the Void",
+       "card_id": null
+      },
+      {
+       "number": "300",
+       "name": "Volibear",
+       "title": "Relentless Storm",
+       "card_id": null
+      },
+      {
+       "number": "301",
+       "name": "Jinx",
+       "title": "Loose Cannon",
+       "card_id": null
+      },
+      {
+       "number": "302",
+       "name": "Darius",
+       "title": "Hand of Noxus",
+       "card_id": null
+      },
+      {
+       "number": "303",
+       "name": "Ahri",
+       "title": "Nine-Tailed Fox",
+       "card_id": null
+      },
+      {
+       "number": "304",
+       "name": "Lee Sin",
+       "title": "Blind Monk",
+       "card_id": null
+      },
+      {
+       "number": "305",
+       "name": "Yasuo",
+       "title": "Unforgiven",
+       "card_id": null
+      },
+      {
+       "number": "306",
+       "name": "Leona",
+       "title": "Radiant Dawn",
+       "card_id": null
+      },
+      {
+       "number": "307",
+       "name": "Teemo",
+       "title": "Swift Scout",
+       "card_id": null
+      },
+      {
+       "number": "308",
+       "name": "Viktor",
+       "title": "Herald of the Arcane",
+       "card_id": null
+      },
+      {
+       "number": "309",
+       "name": "Miss Fortune",
+       "title": "Bounty Hunter",
+       "card_id": null
+      },
+      {
+       "number": "310",
+       "name": "Sett",
+       "title": "The Boss",
+       "card_id": null
+      }
+     ]
+    },
+    {
+     "key": "promo",
+     "label": "Promos",
+     "complete": false,
+     "slots": [
+      {
+       "number": "197b",
+       "name": "Teemo",
+       "title": "Scout",
+       "variant": "Nexus Night Pack",
+       "card_id": "ogn-197b-teemo-nexus-night-pack"
+      },
+      {
+       "number": "202",
+       "name": "Jinx",
+       "title": "Rebel",
+       "variant": "Release Event Prize Pack",
+       "card_id": "ogn-202-jinx-release-event-prize-pack"
+      },
+      {
+       "number": "202b",
+       "name": "Jinx",
+       "title": "Rebel",
+       "variant": "Arcane Box Set",
+       "card_id": "ogn-202b-jinx-arcane-box-set"
+      },
+      {
+       "number": "255",
+       "name": "Ahri",
+       "title": "Nine-Tailed Fox",
+       "variant": "Release Event Prize Pack",
+       "card_id": "ogn-255-ahri-release-event-prize-pack"
+      },
+      {
+       "number": "263a",
+       "name": "Teemo",
+       "title": "Swift Scout",
+       "variant": "Worlds Bundle",
+       "card_id": "ogn-263a-teemo-worlds-bundle"
+      }
+     ]
+    },
+    {
+     "key": "prizewall",
+     "label": "Prizewall",
+     "complete": false,
+     "slots": [
+      {
+       "number": "249",
+       "name": "Volibear",
+       "title": "Relentless Storm",
+       "variant": "Prizewall",
+       "card_id": "ogn-249-volibear-prizewall"
+      },
+      {
+       "number": "251",
+       "name": "Jinx",
+       "title": "Loose Cannon",
+       "variant": "Prizewall",
+       "card_id": "ogn-251-jinx-prizewall"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "SFD",
+   "name": "Spiritforged",
+   "released": "2026-02-13",
+   "size": 221,
+   "sections": [
+    {
+     "key": "signature",
+     "label": "Signature Overnumbers",
+     "slots": [
+      {
+       "number": "223*",
+       "name": "Vayne",
+       "title": "Hunter",
+       "card_id": "sfd-223-vayne-signature-overnumber"
+      },
+      {
+       "number": "224*",
+       "name": "Aphelios",
+       "title": "Exalted",
+       "card_id": null
+      },
+      {
+       "number": "225*",
+       "name": "Irelia",
+       "title": "Fervent",
+       "card_id": null
+      },
+      {
+       "number": "227*",
+       "name": "Ahri",
+       "title": "Inquisitive",
+       "card_id": "sfd-227-ahri-signature-overnumber"
+      },
+      {
+       "number": "228*",
+       "name": "Bard",
+       "title": "Mercurial",
+       "card_id": "sfd-228-bard-signature-overnumber"
+      },
+      {
+       "number": "230*",
+       "name": "Teemo",
+       "title": "Strategist",
+       "card_id": "sfd-230-teemo-signature-overnumber"
+      },
+      {
+       "number": "232*",
+       "name": "Sett",
+       "title": "Brawler",
+       "card_id": null
+      },
+      {
+       "number": "233*",
+       "name": "Yone",
+       "title": "Blademaster",
+       "card_id": null
+      },
+      {
+       "number": "235*",
+       "name": "Yasuo",
+       "title": "Windrider",
+       "card_id": "sfd-235-yasuo-signature-overnumber"
+      },
+      {
+       "number": "236*",
+       "name": "Darius",
+       "title": "Executioner",
+       "card_id": null
+      },
+      {
+       "number": "237*",
+       "name": "Karma",
+       "title": "Channeler",
+       "card_id": null
+      },
+      {
+       "number": "239*",
+       "name": "Soraka",
+       "title": "Wanderer",
+       "card_id": "sfd-239-soraka-signature-overnumber"
+      }
+     ]
+    },
+    {
+     "key": "overnumber",
+     "label": "Overnumbers",
+     "slots": [
+      {
+       "number": "222",
+       "name": "Seal of Rage",
+       "title": null,
+       "card_id": null
+      },
+      {
+       "number": "223",
+       "name": "Vayne",
+       "title": "Hunter",
+       "card_id": null
+      },
+      {
+       "number": "224",
+       "name": "Aphelios",
+       "title": "Exalted",
+       "card_id": null
+      },
+      {
+       "number": "225",
+       "name": "Irelia",
+       "title": "Fervent",
+       "card_id": null
+      },
+      {
+       "number": "226",
+       "name": "Seal of Focus",
+       "title": null,
+       "card_id": null
+      },
+      {
+       "number": "227",
+       "name": "Ahri",
+       "title": "Inquisitive",
+       "card_id": "sfd-227-ahri-overnumber"
+      },
+      {
+       "number": "228",
+       "name": "Bard",
+       "title": "Mercurial",
+       "card_id": null
+      },
+      {
+       "number": "229",
+       "name": "Seal of Insight",
+       "title": null,
+       "card_id": null
+      },
+      {
+       "number": "230",
+       "name": "Teemo",
+       "title": "Strategist",
+       "card_id": null
+      },
+      {
+       "number": "231",
+       "name": "Seal of Strength",
+       "title": null,
+       "card_id": null
+      },
+      {
+       "number": "232",
+       "name": "Sett",
+       "title": "Brawler",
+       "card_id": null
+      },
+      {
+       "number": "233",
+       "name": "Yone",
+       "title": "Blademaster",
+       "card_id": null
+      },
+      {
+       "number": "234",
+       "name": "Seal of Discord",
+       "title": null,
+       "card_id": null
+      },
+      {
+       "number": "235",
+       "name": "Yasuo",
+       "title": "Windrider",
+       "card_id": null
+      },
+      {
+       "number": "236",
+       "name": "Darius",
+       "title": "Executioner",
+       "card_id": null
+      },
+      {
+       "number": "237",
+       "name": "Karma",
+       "title": "Channeler",
+       "card_id": null
+      },
+      {
+       "number": "238",
+       "name": "Seal of Unity",
+       "title": null,
+       "card_id": null
+      },
+      {
+       "number": "239",
+       "name": "Soraka",
+       "title": "Wanderer",
+       "card_id": null
+      },
+      {
+       "number": "240",
+       "name": "Rumble",
+       "title": "Mechanized Menace",
+       "card_id": null
+      },
+      {
+       "number": "241",
+       "name": "Lucian",
+       "title": "Purifier",
+       "card_id": null
+      },
+      {
+       "number": "242",
+       "name": "Draven",
+       "title": "Glorious Executioner",
+       "card_id": null
+      },
+      {
+       "number": "243",
+       "name": "Rek'Sai",
+       "title": "Void Burrower",
+       "card_id": null
+      },
+      {
+       "number": "244",
+       "name": "Ornn",
+       "title": "Fire Below the Mountain",
+       "card_id": null
+      },
+      {
+       "number": "245",
+       "name": "Jax",
+       "title": "Grandmaster at Arms",
+       "card_id": null
+      },
+      {
+       "number": "246",
+       "name": "Irelia",
+       "title": "Blade Dancer",
+       "card_id": null
+      },
+      {
+       "number": "247",
+       "name": "Azir",
+       "title": "Emperor of the Sands",
+       "card_id": null
+      },
+      {
+       "number": "248",
+       "name": "Ezreal",
+       "title": "Prodigal Explorer",
+       "card_id": null
+      },
+      {
+       "number": "249",
+       "name": "Renata Glasc",
+       "title": "Chem-Baroness",
+       "card_id": null
+      },
+      {
+       "number": "250",
+       "name": "Sivir",
+       "title": "Battle Mistress",
+       "card_id": null
+      },
+      {
+       "number": "251",
+       "name": "Fiora",
+       "title": "Grand Duelist",
+       "card_id": null
+      }
+     ]
+    },
+    {
+     "key": "promo",
+     "label": "Promos",
+     "complete": false,
+     "slots": []
+    },
+    {
+     "key": "prizewall",
+     "label": "Prizewall",
+     "complete": false,
+     "slots": [
+      {
+       "number": "199",
+       "name": "Ezreal",
+       "title": "Prodigal Explorer",
+       "variant": "Prizewall",
+       "card_id": "sfd-199-ezreal-prizewall"
+      },
+      {
+       "number": "201",
+       "name": "Renata Glasc",
+       "title": "Chem-Baroness",
+       "variant": "Prizewall",
+       "card_id": "sfd-201-renata-glasc-prizewall"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "UNL",
+   "name": "Unleashed",
+   "released": "2026-05-08",
+   "size": 219,
+   "sections": [
+    {
+     "key": "signature",
+     "label": "Signature Overnumbers",
+     "slots": [
+      {
+       "number": "226*",
+       "name": "Jhin",
+       "title": "Virtuoso",
+       "card_id": "unl-226-jhin-signature-overnumber"
+      },
+      {
+       "number": "227*",
+       "name": "Rengar",
+       "title": "Pridestalker",
+       "card_id": null
+      },
+      {
+       "number": "228*",
+       "name": "Pyke",
+       "title": "Bloodharbor Ripper",
+       "card_id": null
+      },
+      {
+       "number": "229*",
+       "name": "Vi",
+       "title": "Piltover Enforcer",
+       "card_id": "unl-229-vi-signature-overnumber"
+      },
+      {
+       "number": "230*",
+       "name": "Lillia",
+       "title": "Bashful Bloom",
+       "card_id": "unl-230-lillia-signature-overnumber"
+      },
+      {
+       "number": "231*",
+       "name": "Master Yi",
+       "title": "Wuju Master",
+       "card_id": "unl-231-master-yi-signature-overnumber"
+      },
+      {
+       "number": "232*",
+       "name": "Vex",
+       "title": "Gloomist",
+       "card_id": null
+      },
+      {
+       "number": "233*",
+       "name": "Ivern",
+       "title": "Green Father",
+       "card_id": null
+      },
+      {
+       "number": "234*",
+       "name": "Diana",
+       "title": "Scorn of the Moon",
+       "card_id": "unl-234-diana-signature-overnumber"
+      },
+      {
+       "number": "235*",
+       "name": "LeBlanc",
+       "title": "Deceiver",
+       "card_id": "unl-235-leblanc-signature-overnumber"
+      },
+      {
+       "number": "236*",
+       "name": "Kha'Zix",
+       "title": "Voidreaver",
+       "card_id": null
+      },
+      {
+       "number": "237*",
+       "name": "Poppy",
+       "title": "Keeper of the Hammer",
+       "card_id": null
+      }
+     ]
+    },
+    {
+     "key": "overnumber",
+     "label": "Overnumbers",
+     "slots": [
+      {
+       "number": "220",
+       "name": "Pouty Poro",
+       "title": null,
+       "card_id": null
+      },
+      {
+       "number": "221",
+       "name": "Lonely Poro",
+       "title": null,
+       "card_id": null
+      },
+      {
+       "number": "222",
+       "name": "Plundering Poro",
+       "title": null,
+       "card_id": null
+      },
+      {
+       "number": "223",
+       "name": "Veteran Poro",
+       "title": null,
+       "card_id": null
+      },
+      {
+       "number": "224",
+       "name": "Mystic Poro",
+       "title": null,
+       "card_id": null
+      },
+      {
+       "number": "225",
+       "name": "Daring Poro",
+       "title": null,
+       "card_id": null
+      },
+      {
+       "number": "226",
+       "name": "Jhin",
+       "title": "Virtuoso",
+       "card_id": null
+      },
+      {
+       "number": "227",
+       "name": "Rengar",
+       "title": "Pridestalker",
+       "card_id": null
+      },
+      {
+       "number": "228",
+       "name": "Pyke",
+       "title": "Bloodharbor Ripper",
+       "card_id": null
+      },
+      {
+       "number": "229",
+       "name": "Vi",
+       "title": "Piltover Enforcer",
+       "card_id": null
+      },
+      {
+       "number": "230",
+       "name": "Lillia",
+       "title": "Bashful Bloom",
+       "card_id": null
+      },
+      {
+       "number": "231",
+       "name": "Master Yi",
+       "title": "Wuju Master",
+       "card_id": null
+      },
+      {
+       "number": "232",
+       "name": "Vex",
+       "title": "Gloomist",
+       "card_id": null
+      },
+      {
+       "number": "233",
+       "name": "Ivern",
+       "title": "Green Father",
+       "card_id": null
+      },
+      {
+       "number": "234",
+       "name": "Diana",
+       "title": "Scorn of the Moon",
+       "card_id": null
+      },
+      {
+       "number": "235",
+       "name": "LeBlanc",
+       "title": "Deceiver",
+       "card_id": null
+      },
+      {
+       "number": "236",
+       "name": "Kha'Zix",
+       "title": "Voidreaver",
+       "card_id": null
+      },
+      {
+       "number": "237",
+       "name": "Poppy",
+       "title": "Keeper of the Hammer",
+       "card_id": null
+      },
+      {
+       "number": "238",
+       "name": "Baron Nashor",
+       "title": null,
+       "card_id": "unl-238-baron-nashor-ultimate-rare",
+       "rarity": "Ultimate Rare"
+      }
+     ]
+    },
+    {
+     "key": "promo",
+     "label": "Promos",
+     "complete": false,
+     "slots": [
+      {
+       "number": "197",
+       "name": "Diana",
+       "title": "Scorn of the Moon",
+       "variant": "Official Event Prize",
+       "card_id": "unl-197-diana-official-event-prize"
+      }
+     ]
+    },
+    {
+     "key": "prizewall",
+     "label": "Prizewall",
+     "complete": false,
+     "slots": []
+    }
+   ]
+  },
+  {
+   "code": "VEN",
+   "name": "Vendetta",
+   "released": "2026-07-31",
+   "size": 166,
+   "sections": [
+    {
+     "key": "signature",
+     "label": "Signature Overnumbers",
+     "slots": [
+      {
+       "number": "189*",
+       "name": "Akali",
+       "title": "Rogue Assassin",
+       "card_id": "ven-189-akali-signature-overnumber"
+      },
+      {
+       "number": "190*",
+       "name": "Renekton",
+       "title": "Butcher of the Sands",
+       "card_id": "ven-190-renekton-signature-overnumber"
+      },
+      {
+       "number": "191*",
+       "name": "Zed",
+       "title": "Master of Shadows",
+       "card_id": "ven-191-zed-signature-overnumber"
+      },
+      {
+       "number": "192*",
+       "name": "Nasus",
+       "title": "Curator of the Sands",
+       "card_id": null
+      },
+      {
+       "number": "193*",
+       "name": "Shen",
+       "title": "Eye of Twilight",
+       "card_id": null
+      },
+      {
+       "number": "194*",
+       "name": "Jayce",
+       "title": "Defender of Tomorrow",
+       "card_id": null
+      },
+      {
+       "number": "195*",
+       "name": "Mel",
+       "title": "Soul's Reflection",
+       "card_id": "ven-195-mel-signature-overnumber"
+      },
+      {
+       "number": "196*",
+       "name": "Ambessa",
+       "title": "Matriarch of War",
+       "card_id": null
+      },
+      {
+       "number": "197*",
+       "name": "Kennen",
+       "title": "Heart of the Tempest",
+       "card_id": "ven-197-kennen-signature-overnumber"
+      }
+     ]
+    },
+    {
+     "key": "overnumber",
+     "label": "Overnumbers",
+     "slots": [
+      {
+       "number": "167",
+       "name": "Vi",
+       "title": "Destructive",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "168",
+       "name": "Jinx",
+       "title": "Demolitionist",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "169",
+       "name": "Zed",
+       "title": "From the Shadows",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "170",
+       "name": "Shen",
+       "title": "Scourge of Shadows",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "171",
+       "name": "Riven",
+       "title": "Shattered",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "172",
+       "name": "Draven",
+       "title": "Showboat",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "173",
+       "name": "Swain",
+       "title": "Visionary",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "174",
+       "name": "Irelia",
+       "title": "Fervent",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "175",
+       "name": "Jayce",
+       "title": "Man of Progress",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "176",
+       "name": "Viktor",
+       "title": "Innovator",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "177",
+       "name": "Renekton",
+       "title": "Brute",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "178",
+       "name": "Nasus",
+       "title": "Guardian of Knowledge",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "179",
+       "name": "Rengar",
+       "title": "Trophy Hunter",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "180",
+       "name": "Kha'Zix",
+       "title": "Evolving Hunter",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "181",
+       "name": "Gangplank",
+       "title": "Naval",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "182",
+       "name": "Illaoi",
+       "title": "Prophet of the Great Kraken",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "183",
+       "name": "Diana",
+       "title": "No Longer Human",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "184",
+       "name": "Leona",
+       "title": "Determined",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "185",
+       "name": "Kayle",
+       "title": "Justified",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "186",
+       "name": "Morgana",
+       "title": "Vindictive",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "187",
+       "name": "Ambessa",
+       "title": "Respected and Feared",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "188",
+       "name": "Mel",
+       "title": "Defiant Soul",
+       "card_id": null,
+       "rarity": "Rival Overnumber"
+      },
+      {
+       "number": "189",
+       "name": "Akali",
+       "title": "Rogue Assassin",
+       "card_id": "ven-189-akali-overnumber"
+      },
+      {
+       "number": "190",
+       "name": "Renekton",
+       "title": "Butcher of the Sands",
+       "card_id": null
+      },
+      {
+       "number": "191",
+       "name": "Zed",
+       "title": "Master of Shadows",
+       "card_id": null
+      },
+      {
+       "number": "192",
+       "name": "Nasus",
+       "title": "Curator of the Sands",
+       "card_id": null
+      },
+      {
+       "number": "193",
+       "name": "Shen",
+       "title": "Eye of Twilight",
+       "card_id": null
+      },
+      {
+       "number": "194",
+       "name": "Jayce",
+       "title": "Defender of Tomorrow",
+       "card_id": null
+      },
+      {
+       "number": "195",
+       "name": "Mel",
+       "title": "Soul's Reflection",
+       "card_id": null
+      },
+      {
+       "number": "196",
+       "name": "Ambessa",
+       "title": "Matriarch of War",
+       "card_id": null
+      },
+      {
+       "number": "197",
+       "name": "Kennen",
+       "title": "Heart of the Tempest",
+       "card_id": null
+      }
+     ]
+    },
+    {
+     "key": "special",
+     "label": "Crystal Rose Alt Art",
+     "slots": [
+      {
+       "number": "SP1",
+       "name": "Kai'Sa",
+       "title": "Survivor",
+       "card_id": null
+      },
+      {
+       "number": "SP2",
+       "name": "Sona",
+       "title": "Harmonious",
+       "card_id": null
+      },
+      {
+       "number": "SP3",
+       "name": "Ahri",
+       "title": "Inquisitive",
+       "card_id": "ven-sp3-ahri-crystal-rose-alt-art"
+      },
+      {
+       "number": "SP4",
+       "name": "Sett",
+       "title": "Brawler",
+       "card_id": null
+      },
+      {
+       "number": "SP5",
+       "name": "Ezreal",
+       "title": "Prodigy",
+       "card_id": null
+      },
+      {
+       "number": "SP6",
+       "name": "Lux",
+       "title": "Crownguard",
+       "card_id": "ven-sp6-lux-crystal-rose-alt-art"
+      }
+     ]
+    },
+    {
+     "key": "promo",
+     "label": "Promos",
+     "complete": false,
+     "slots": []
+    },
+    {
+     "key": "prizewall",
+     "label": "Prizewall",
+     "complete": false,
+     "slots": []
+    }
+   ]
+  },
+  {
+   "code": "PROK",
+   "name": "Project K",
+   "released": null,
+   "size": null,
+   "note": "Pre-launch sample decks and promos (card set code FND). Deck list assumed: Jinx, Viktor, Yasuo, Volibear \u2014 confirm.",
+   "sections": [
+    {
+     "key": "promo",
+     "label": "Promos",
+     "slots": [
+      {
+       "number": null,
+       "name": "Teemo",
+       "title": "Scout",
+       "variant": "Red Pack promo",
+       "card_id": null
+      },
+      {
+       "number": null,
+       "name": "Volibear",
+       "title": "Relentless Storm",
+       "variant": "Silver Pack promo",
+       "card_id": null
+      },
+      {
+       "number": null,
+       "name": "Jinx",
+       "title": "Loose Cannon",
+       "variant": "Silver Pack promo",
+       "card_id": null
+      },
+      {
+       "number": null,
+       "name": "Yasuo",
+       "title": "Unforgiven",
+       "variant": "Silver Pack promo",
+       "card_id": null
+      },
+      {
+       "number": null,
+       "name": "Viktor",
+       "title": "Herald of the Arcane",
+       "variant": "Silver Pack promo",
+       "card_id": null
+      }
+     ]
+    },
+    {
+     "key": "sample_deck",
+     "label": "Sample Decks",
+     "slots": [
+      {
+       "number": null,
+       "name": "Jinx",
+       "title": "Loose Cannon",
+       "variant": "Sample Deck Legend (EN)",
+       "card_id": null
+      },
+      {
+       "number": null,
+       "name": "Jinx",
+       "title": "Loose Cannon",
+       "variant": "Sample Deck Legend (CN)",
+       "card_id": null
+      },
+      {
+       "number": null,
+       "name": "Viktor",
+       "title": "Herald of the Arcane",
+       "variant": "Sample Deck Legend (EN)",
+       "card_id": null
+      },
+      {
+       "number": null,
+       "name": "Viktor",
+       "title": "Herald of the Arcane",
+       "variant": "Sample Deck Legend (CN)",
+       "card_id": null
+      },
+      {
+       "number": null,
+       "name": "Yasuo",
+       "title": "Unforgiven",
+       "variant": "Sample Deck Legend (EN)",
+       "card_id": null
+      },
+      {
+       "number": null,
+       "name": "Yasuo",
+       "title": "Unforgiven",
+       "variant": "Sample Deck Legend (CN)",
+       "card_id": null
+      },
+      {
+       "number": null,
+       "name": "Volibear",
+       "title": "Relentless Storm",
+       "variant": "Sample Deck Legend (EN)",
+       "card_id": null
+      },
+      {
+       "number": null,
+       "name": "Volibear",
+       "title": "Relentless Storm",
+       "variant": "Sample Deck Legend (CN)",
+       "card_id": null
+      },
+      {
+       "number": "FND-202",
+       "name": "Jinx",
+       "title": "Rebel",
+       "variant": "Sample Deck (EN)",
+       "card_id": null
+      },
+      {
+       "number": "FND-202",
+       "name": "Jinx",
+       "title": "Rebel",
+       "variant": "Sample Deck (CN)",
+       "card_id": null
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
