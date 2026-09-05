@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="About" current="about">
+  <section class="hero">
+    <div class="eyebrow">About</div>
+    <h1 class="page-title">Riftvesting</h1>
+  </section>
+  <div class="prose">
+    <p>Riftvesting tracks the graded-card market for Riftbound: League of Legends TCG — Signature Overnumbers, Overnumbers, promos and prize-wall cards in PSA, BGS and CGC slabs.</p>
+    <h2>Where the numbers come from</h2>
+    <p>Every price on this site is a completed sale: eBay, ALT and PWCC transactions collected through ALT's market data, plus sales we verify by hand. Listings and asking prices are never counted. Unpaid sales are shown crossed out and excluded from every statistic.</p>
+    <h2>How the stats work</h2>
+    <p>The change "vs last sale" compares the two most recent sales. "Since" compares the latest sale with the sale closest to 30 days before it. High, low, average and median cover the last 30 days; when a card has sold fewer than three times in that span we widen to its last ten sales and say so. Populations and gem rates come from the grading companies' published reports, as mirrored on ALT. Two sales on the same day at the same price are two sales — nothing is de-duplicated.</p>
+    <h2>Shop</h2>
+    <p>The shop lists slabs from our own collection. Prices are firm asks; payment by PayPal or crypto, arranged by DM.</p>
+    <h2>Contact</h2>
+    <p>Sales infographics and updates are posted on X at <a href="https://x.com/Riftvesting">@Riftvesting</a>. Corrections and missing cards: DM there.</p>
+    <p class="muted small">Riftvesting is not affiliated with Riot Games, PSA, BGS or ALT. Nothing here is financial advice.</p>
+  </div>
+</Base>
+<style>
+  .hero { padding: 40px 0 8px; }
+  .prose { max-width: 66ch; color: var(--ink-2); }
+  .prose h2 { color: var(--ink); font-size: 18px; margin: 28px 0 8px; }
+  .prose a { color: var(--gold-2); text-decoration: underline; text-underline-offset: 3px; }
+</style>

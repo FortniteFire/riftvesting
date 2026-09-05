@@ -1,0 +1,40 @@
+---
+import Base from '../../layouts/Base.astro';
+import GradeBadge from '../../components/GradeBadge.astro';
+import { loadInventory, cardById } from '../../lib/data';
+import { shop } from '../../lib/shop';
+import { url, money } from '../../lib/format';
+const items = loadInventory().filter((i) => i.status === 'available' || i.status === 'reserved');
+---
+<Base title="Shop" current="shop">
+  <section class="hero">
+    <div class="eyebrow">Shop</div>
+    <h1 class="page-title">Slabs</h1>
+    <p class="lede">Graded Riftbound cards from our collection. Every slab ships with its cert number, verifiable on the grader's site.</p>
+  </section>
+  {items.length ? (
+    <div class="grid" style="margin-top:24px">
+      {items.map((item) => {
+        const card = cardById(item.card_id);
+        const name = card ? `${card.card.name}${card.card.title ? ', ' + card.card.title : ''}` : item.card_id;
+        return (
+          <a class="tile" href={url(`/shop/${item.id}/`)}>
+            <div class="art">{item.photos?.front ? <img src={url('/' + item.photos.front)} alt={name} loading="lazy" /> : <span class="muted small">Photo coming</span>}</div>
+            <div>
+              <div class="name">{name}</div>
+              <div class="sub">{card ? `${card.card.set_code} #${card.card.number} · ${card.card.variant}` : ''}</div>
+            </div>
+            <div class="row"><span class="price">{item.ask ? money(item.ask) : 'DM for price'}</span>{item.status === 'reserved' && <span class="chip chip-flat">Reserved</span>}</div>
+            <GradeBadge grade={item.grade} />
+          </a>
+        );
+      })}
+    </div>
+  ) : (
+    <div class="panel" style="margin-top:24px">
+      <h2 style="font-size:20px">Shelves are empty for now</h2>
+      <p class="muted">The first slabs go up soon. Until then, DM <a href={shop.dmUrl} style="color:var(--gold-2)">{shop.handle}</a> on X if you're looking for something specific.</p>
+    </div>
+  )}
+</Base>
+<style>.hero { padding: 40px 0 8px; }</style>

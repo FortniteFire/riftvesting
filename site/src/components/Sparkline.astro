@@ -1,0 +1,58 @@
+---
+// Build-time SVG: price over time for the sales in the window, oldest → newest. Filled dots = auction, hollow = fixed price / best offer.
+import type { Sale } from '../lib/data';
+import { money, dateShort } from '../lib/format';
+import { toDate as td } from '../lib/data';
+interface Props { sales: Sale[]; width?: number; height?: number; small?: boolean }
+const { sales, width = 1000, height = 260, small = false } = Astro.props;
+const compact = false;
+const pts = [...sales].reverse();
+const W = width, H = height, padL = small ? 44 : 56, padR = small ? 10 : 16, padT = small ? 14 : 22, padB = small ? 24 : 28;
+const fs = small ? 11 : 12;
+const prices = pts.map((s) => s.price);
+const lo = Math.min(...prices), hi = Math.max(...prices);
+const span = hi - lo || hi * 0.1 || 1;
+const yOf = (p: number) => padT + (H - padT - padB) * (1 - (p - lo) / span);
+const t0 = pts.length ? td(pts[0].date).getTime() : 0, t1 = pts.length ? td(pts[pts.length - 1].date).getTime() : 1;
+const xOf = (i: number) => {
+  if (t1 === t0) return padL + ((W - padL - padR) * i) / Math.max(pts.length - 1, 1);
+  return padL + ((W - padL - padR) * (td(pts[i].date).getTime() - t0)) / (t1 - t0);
+};
+// same-day sales get nudged apart so dots don't stack
+const xs = pts.map((_, i) => xOf(i));
+for (let i = 1; i < xs.length; i++) if (xs[i] - xs[i - 1] < 6) xs[i] = xs[i - 1] + 6;
+// keep everything inside the plot after nudging
+if (xs.length > 1 && xs[xs.length - 1] > W - padR) {
+  const a = xs[0], b = xs[xs.length - 1];
+  for (let i = 0; i < xs.length; i++) xs[i] = padL + ((W - padL - padR) * (xs[i] - a)) / (b - a);
+}
+const path = pts.map((s, i) => `${i ? 'L' : 'M'}${xs[i].toFixed(1)},${yOf(s.price).toFixed(1)}`).join(' ');
+const area = pts.length ? `${path} L${xs[xs.length - 1].toFixed(1)},${H - padB} L${xs[0].toFixed(1)},${H - padB} Z` : '';
+const ticks = compact ? [] : [lo, lo + span / 2, hi];
+---
+<svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label="Sales chart" style="display:block">
+  <defs>
+    <linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#d9b96b" stop-opacity="0.28"/><stop offset="1" stop-color="#d9b96b" stop-opacity="0"/></linearGradient>
+  </defs>
+  {!compact && ticks.map((t) => (
+    <g>
+      <line x1={padL} x2={W - padR} y1={yOf(t)} y2={yOf(t)} stroke="#22355a" stroke-width="1" />
+      <text x={padL - 8} y={yOf(t) + 4} text-anchor="end" font-size={fs} fill="#7f8fae">{money(t)}</text>
+    </g>
+  ))}
+  {pts.length > 1 && <path d={area} fill="url(#area)" />}
+  <path d={path} fill="none" stroke="#d9b96b" stroke-width={small ? 2 : 2.5} stroke-linejoin="round" stroke-linecap="round" />
+  {pts.map((s, i) => {
+    const last = i === pts.length - 1;
+    const r = small ? 3 : 3.5;
+    return s.type === 'auction'
+      ? <circle cx={xs[i]} cy={yOf(s.price)} r={last ? r + 1.5 : r} fill={last ? '#f0dcaa' : '#e3e9f5'} stroke={last ? '#d9b96b' : 'none'} stroke-width={last ? 3 : 0} />
+      : <circle cx={xs[i]} cy={yOf(s.price)} r={last ? r + 1 : r} fill="#0f1b31" stroke={last ? '#f0dcaa' : '#e3e9f5'} stroke-width="2" />;
+  })}
+  {!compact && pts.length > 0 && (
+    <g font-size={fs} fill="#7f8fae">
+      <text x={xs[0]} y={H - 8} text-anchor={xs[0] < padL + 20 ? 'start' : 'middle'}>{dateShort(pts[0].date)}</text>
+      {pts.length > 1 && <text x={xs[xs.length - 1]} y={H - 8} text-anchor="end">{dateShort(pts[pts.length - 1].date)}</text>}
+    </g>
+  )}
+</svg>

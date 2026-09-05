@@ -1,0 +1,51 @@
+---
+import Base from '../../layouts/Base.astro';
+import GradeBadge from '../../components/GradeBadge.astro';
+import { loadInventory, cardById, gradeStats, graderOf } from '../../lib/data';
+import { shop, certUrl } from '../../lib/shop';
+import { url, money, dateLong } from '../../lib/format';
+export function getStaticPaths() {
+  return loadInventory().map((item) => ({ params: { id: item.id }, props: { item } }));
+}
+const { item } = Astro.props;
+const card = cardById(item.card_id);
+const name = card ? `${card.card.name}${card.card.title ? ', ' + card.card.title : ''}` : item.card_id;
+const market = card?.grades[item.grade] ? gradeStats(card.grades[item.grade]) : null;
+const verify = certUrl(graderOf(item.grade), item.cert);
+---
+<Base title={`${name} · ${item.grade}`} current="shop">
+  <nav class="crumbs small muted"><a href={url('/shop/')}>Shop</a> / <span>{name}</span></nav>
+  <section class="slab">
+    <div class="photos">
+      {item.photos?.front && <img src={url('/' + item.photos.front)} alt={`${name} front`} />}
+      {item.photos?.back && <img src={url('/' + item.photos.back)} alt={`${name} back`} />}
+    </div>
+    <div class="panel">
+      <GradeBadge grade={item.grade} long />
+      <h1 class="page-title" style="margin-top:12px">{name}</h1>
+      {card && <div class="muted">{card.card.set} · #{card.card.number} · {card.card.variant}</div>}
+      <div class="price-big" style="margin-top:20px">{item.ask ? money(item.ask) : 'DM for price'}</div>
+      {item.status === 'reserved' && <div class="chip chip-flat" style="margin-top:8px">Reserved</div>}
+      <div class="cert">Cert {verify ? <a href={verify} rel="noopener">{item.cert}</a> : item.cert}</div>
+      {market?.last && card && (
+        <p class="small muted">Market: last sale {money(market.last.price)} on {dateLong(market.last.date)}{market.median ? `, 30-day median ${money(market.median)}` : ''}. <a href={url(`/cards/${card.card.id}/`)}>Full price check</a>.</p>
+      )}
+      {item.notes && <p>{item.notes}</p>}
+      <div class="buy">
+        <a class="button solid" href={shop.dmUrl}>DM {shop.handle} to buy</a>
+        {shop.paypalMe && <a class="button" href={shop.paypalMe}>PayPal</a>}
+        {Object.entries(shop.crypto).map(([sym, addr]) => <div class="small muted"><strong>{sym}</strong> <code>{addr}</code></div>)}
+      </div>
+    </div>
+  </section>
+</Base>
+<style>
+  .crumbs { padding-top: 16px; }
+  .slab { display: grid; gap: 20px; grid-template-columns: 1fr; padding-top: 16px; }
+  @media (min-width: 860px) { .slab { grid-template-columns: 1fr 1fr; } }
+  .photos { display: grid; gap: 12px; }
+  .photos img { border-radius: var(--radius); background: #0a1220; }
+  .cert { margin-top: 16px; font-size: 14px; color: var(--ink-2); }
+  .cert a { color: var(--gold-2); text-decoration: underline; text-underline-offset: 3px; }
+  .buy { display: grid; gap: 10px; margin-top: 20px; }
+</style>

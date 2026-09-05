@@ -1,0 +1,9 @@
+---
+import { pct } from '../lib/format';
+interface Props { value: number | null | undefined; label?: string; chip?: boolean }
+const { value, label, chip = false } = Astro.props;
+const dir = value == null ? 'flat' : value > 0.0005 ? 'up' : value < -0.0005 ? 'down' : 'flat';
+---
+{chip
+  ? <span class={`chip chip-${dir}`}>{pct(value)}</span>
+  : <span class={`change ${dir}`}>{pct(value)}{label && <small>{label}</small>}</span>}

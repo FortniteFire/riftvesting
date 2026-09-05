@@ -1,0 +1,8 @@
+---
+import { graderOf, gradeLabel } from '../lib/data';
+interface Props { grade: string; long?: boolean }
+const { grade, long = false } = Astro.props;
+const grader = graderOf(grade).toLowerCase();
+const label = gradeLabel(grade);
+---
+<span class={`badge badge-${grader}`}>{grade}{long && label ? ` · ${label}` : ''}</span>

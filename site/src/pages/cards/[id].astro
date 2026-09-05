@@ -1,0 +1,100 @@
+---
+import Base from '../../layouts/Base.astro';
+import PriceCheck from '../../components/PriceCheck.astro';
+import GradeBadge from '../../components/GradeBadge.astro';
+import { loadCards, loadSets, popStats, gradeStats, firstImage } from '../../lib/data';
+import { url, money, dateLong, saleType, saleSource, num, pct } from '../../lib/format';
+export function getStaticPaths() {
+  return loadCards().map((c) => ({ params: { id: c.card.id }, props: { card: c } }));
+}
+const { card } = Astro.props;
+const grades = Object.keys(card.grades);
+const pops = popStats(card.pops);
+const img = firstImage(card);
+const set = loadSets().find((s) => s.code === card.card.set_code);
+const rows = grades.flatMap((grade) => card.grades[grade].sales.map((sale) => ({ grade, sale })))
+  .sort((a, b) => (a.sale.date < b.sale.date ? 1 : a.sale.date > b.sale.date ? -1 : 0)).slice(0, 40);
+const popDetail = pops.map((p) => ({ grader: p.grader, text: Object.entries(card.pops[p.grader] as Record<string, number>)
+  .sort((a, b) => (a[0] === 'BL' ? -1 : b[0] === 'BL' ? 1 : parseFloat(b[0]) - parseFloat(a[0]))).map(([k, v]) => `${k}: ${v}`).join(' · ') }));
+const checked = Object.values(card.grades).map((g) => g.last_checked).filter(Boolean).sort().pop();
+---
+<Base title={`${card.card.name}${card.card.title ? ', ' + card.card.title : ''} · ${card.card.set_code} #${card.card.number}`} current="sets">
+  <nav class="crumbs small muted">
+    <a href={url('/')}>Home</a> / <a href={url(`/sets/${card.card.set_code.toLowerCase()}/`)}>{set?.name ?? card.card.set}</a> / <span>{card.card.name} #{card.card.number}</span>
+  </nav>
+
+  <section class="card-hero">
+    <div class="art">{img ? <img src={url('/' + img)} alt={`${card.card.name} graded slab`} /> : <div class="muted small">No photo</div>}</div>
+    <div>
+      <div class="eyebrow">{card.card.set} · #{card.card.number} · {card.card.variant}</div>
+      <h1 class="page-title">{card.card.name}</h1>
+      {card.card.title && <div class="subtitle">{card.card.title}</div>}
+      <div class="grades">{grades.map((g) => <GradeBadge grade={g} long />)}</div>
+      {card.card.notes && <p class="note small">{card.card.notes}</p>}
+      <div class="small muted" style="margin-top:12px">Data checked {dateLong(checked)} · populations as of {dateLong(card.pops?.as_of)}</div>
+    </div>
+  </section>
+
+  <div class="columns">
+    {grades.map((g) => <PriceCheck card={card} grade={g} />)}
+  </div>
+
+  {pops.length > 0 && (
+    <section class="section">
+      <div class="section-head"><h2>Gem rate</h2><span class="count">how often this card comes back a 10</span></div>
+      <div class="panel gem">
+        {pops.map((p) => (
+          <div class="gem-row">
+            <GradeBadge grade={`${p.grader} 10`} />
+            <div class="bar"><span class={`fill ${p.grader.toLowerCase()}`} style={`width:${p.gem != null ? Math.round(p.gem * 100) : 0}%`}></span></div>
+            <div class="gem-pct">{p.gem != null ? pct(p.gem, 1).replace('+', '') : '—'}</div>
+            <div class="small muted">{num(p.tens)} of {num(p.total)} graded{p.bl ? ` · ${p.bl} Black Label` : ''}</div>
+          </div>
+        ))}
+        <div class="pop-detail small muted">
+          {popDetail.map((d) => <span><strong>{d.grader}</strong> {d.text}</span>)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="section">
+    <div class="section-head"><h2>Recent sales</h2><span class="count">latest {rows.length}</span></div>
+    <div class="panel" style="padding:8px 4px">
+      <table class="table">
+        <thead><tr><th>Date</th><th>Grade</th><th class="num">Price</th><th>Type</th><th>Source</th></tr></thead>
+        <tbody>
+          {rows.map(({ grade, sale }) => (
+            <tr class={sale.unpaid ? 'unpaid' : ''}>
+              <td>{dateLong(sale.date)}</td>
+              <td><GradeBadge grade={grade} /></td>
+              <td class="num"><strong>{money(sale.price)}</strong>{sale.unpaid && <span class="small muted"> unpaid</span>}</td>
+              <td class="muted">{saleType(sale.type)}</td>
+              <td class="muted">{saleSource(sale.source)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .crumbs { padding-top: 16px; }
+  .card-hero { display: grid; grid-template-columns: 96px 1fr; gap: 20px; align-items: center; padding: 20px 0 24px; }
+  .card-hero .art { aspect-ratio: 3 / 4; border-radius: 10px; background: #0a1220; overflow: hidden; display: grid; place-items: center; }
+  .card-hero .art img { width: 100%; height: 100%; object-fit: contain; }
+  .subtitle { color: var(--gold); font-weight: 600; font-size: 18px; margin-top: 4px; }
+  .grades { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  @media (min-width: 720px) { .card-hero { grid-template-columns: 140px 1fr; } }
+  .columns { display: grid; gap: 16px; grid-template-columns: 1fr; }
+  @media (min-width: 900px) { .columns { grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); } }
+  .gem-row { display: grid; grid-template-columns: auto 1fr auto; gap: 8px 14px; align-items: center; padding: 8px 0; }
+  .gem-row .small { grid-column: 2 / 4; }
+  .gem-row .bar { height: 10px; border-radius: 5px; background: var(--navy-2); overflow: hidden; }
+  .gem-row .fill { display: block; height: 100%; background: var(--up); }
+  .gem-row .fill.bgs { background: linear-gradient(90deg, var(--gold), var(--gold-2)); }
+  .gem-row .fill.cgc { background: var(--cgc); }
+  .gem-pct { font-family: var(--font-display); font-weight: 800; font-size: 24px; color: var(--up); min-width: 84px; text-align: right; }
+  .pop-detail { display: grid; gap: 4px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); }
+</style>

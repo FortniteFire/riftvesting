@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro';
+import SlotTile from '../../components/SlotTile.astro';
+import { loadSets } from '../../lib/data';
+import { url, dateLong } from '../../lib/format';
+export function getStaticPaths() {
+  return loadSets().map((s) => ({ params: { code: s.code.toLowerCase() }, props: { set: s } }));
+}
+const { set } = Astro.props;
+const sets = loadSets();
+const tracked = set.sections.flatMap((s) => s.slots).filter((s) => s.card_id).length;
+const total = set.sections.flatMap((s) => s.slots).length;
+---
+<Base title={`${set.name} — Riftbound set`} current="sets">
+  <nav class="set-nav" aria-label="Sets">
+    {sets.map((s) => <a href={url(`/sets/${s.code.toLowerCase()}/`)} aria-current={s.code === set.code ? 'page' : undefined}>{s.name}</a>)}
+  </nav>
+  <section class="hero">
+    <div class="eyebrow">{set.code}{set.released ? ` · released ${dateLong(set.released)}` : ''}{set.size ? ` · ${set.size} cards in the main set` : ''}</div>
+    <h1 class="page-title">{set.name}</h1>
+    <p class="lede">{tracked} of {total} slots have sales data. Empty slots are cards we don't track yet.</p>
+    {set.note && <p class="note">{set.note}</p>}
+  </section>
+
+  {set.sections.map((sec) => (
+    <section class="section">
+      <div class="section-head">
+        <h2>{sec.label}</h2>
+        <span class="count">{sec.slots.filter((s) => s.card_id).length} of {sec.slots.length} tracked{sec.complete === false ? ' · list still growing' : ''}</span>
+      </div>
+      {sec.slots.length ? (
+        <div class="grid">{sec.slots.map((slot) => <SlotTile slot={slot} setCode={set.code} />)}</div>
+      ) : (
+        <div class="panel muted">Nothing here yet — slots appear as graded {sec.label.toLowerCase()} cards show up in the market.</div>
+      )}
+    </section>
+  ))}
+</Base>
+
+<style>
+  .set-nav { display: flex; gap: 4px; flex-wrap: wrap; padding-top: 20px; }
+  .set-nav a { padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); color: var(--ink-2); font-size: 14px; }
+  .set-nav a[aria-current] { border-color: var(--gold); color: var(--gold-2); }
+  .hero { padding: 24px 0 0; }
+</style>

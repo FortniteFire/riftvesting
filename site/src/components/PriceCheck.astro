@@ -1,0 +1,79 @@
+---
+// One grade column of the Price Check layout: badge, last sale, change, chart, 30-day stats, ALT value.
+import type { Card } from '../lib/data';
+import { gradeStats, gradeLabel, popStats, graderOf } from '../lib/data';
+import { money, pct, dateLong, dateShort, saleType, saleSource, num } from '../lib/format';
+import GradeBadge from './GradeBadge.astro';
+import Change from './Change.astro';
+import Sparkline from './Sparkline.astro';
+interface Props { card: Card; grade: string }
+const { card, grade } = Astro.props;
+const g = card.grades[grade];
+const s = gradeStats(g);
+const grader = graderOf(grade);
+const pop = popStats(card.pops).find((p) => p.grader === grader);
+const gradeNum = grade.split(' ')[1];
+const thisPop = card.pops?.[grader]?.[gradeNum];
+const auctions = s.window.filter((x) => x.type === 'auction').length;
+---
+<section class="panel pc">
+  <header class="pc-head">
+    <GradeBadge grade={grade} long />
+    <div class="pc-pop muted small">
+      {thisPop != null && pop ? `${gradeLabel(grade) || grade} pop ${num(thisPop)} / ${num(pop.total)} graded${pop.bl && gradeNum !== 'BL' ? ` · ${pop.bl} Black Label` : ''}` : 'Population not available'}
+    </div>
+  </header>
+
+  {s.last ? (
+    <div class="pc-price">
+      <div>
+        <div class="price-big">{money(s.last.price)}</div>
+        <div class="price-sub">{saleType(s.last.type)} · {saleSource(s.last.source)} · {dateLong(s.last.date)}</div>
+      </div>
+      <div class="pc-changes">
+        <Change value={s.vsPrev} label="vs last sale" />
+        <Change value={s.vs30} label={s.ref30 ? `since ${dateShort(s.ref30.date)}` : 'no earlier sale'} />
+      </div>
+    </div>
+  ) : (
+    <p class="muted">No completed sales recorded yet.</p>
+  )}
+
+  {s.window.length > 0 && (
+    <div class="pc-chart">
+      <div class="pc-chart-head">
+        <span class="small"><strong>{s.n} sales</strong> <span class="muted">· {s.windowFrom === s.windowTo ? dateLong(s.windowTo) : `${dateShort(s.windowFrom)} – ${dateLong(s.windowTo)}`}</span></span>
+        <span class="legend"><span><i class="dot-fill"></i>Auction ({auctions})</span><span><i class="dot-hollow"></i>Buy now / Best offer ({s.n - auctions})</span></span>
+      </div>
+      <div class="chart-desk"><Sparkline sales={s.window} /></div>
+      <div class="chart-mob"><Sparkline sales={s.window} width={360} height={190} small /></div>
+    </div>
+  )}
+
+  <div class="stats">
+    <div><div class="k">High</div><div class="v">{money(s.high)}</div></div>
+    <div><div class="k">Low</div><div class="v">{money(s.low)}</div></div>
+    <div><div class="k">Average</div><div class="v">{money(s.avg)}</div></div>
+    <div><div class="k">Median</div><div class="v">{money(s.median)}</div></div>
+  </div>
+  <div class="small muted" style="margin-top:6px">Stats cover the {s.windowLabel}.</div>
+
+  {g.alt_value && (
+    <div class="pc-alt">
+      <div><span class="k">ALT value</span> <strong>{money(g.alt_value.value)}</strong> <span class="muted">{money(g.alt_value.low)} – {money(g.alt_value.high)}</span></div>
+      {g.alt_url && <a class="small" href={g.alt_url} rel="noopener">Sales history on ALT</a>}
+    </div>
+  )}
+</section>
+
+<style>
+  .pc-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+  .pc-price { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 24px; margin-top: 18px; }
+  .pc-changes { display: grid; gap: 4px; text-align: right; }
+  .pc-chart { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); }
+  .chart-mob { display: none; }
+  @media (max-width: 640px) { .chart-desk { display: none; } .chart-mob { display: block; } }
+  .pc-chart-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; margin-bottom: 8px; }
+  .pc-alt { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 14px; }
+  .pc-alt .k { color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; margin-right: 6px; }
+</style>

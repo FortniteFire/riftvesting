@@ -1,0 +1,112 @@
+---
+import Base from '../layouts/Base.astro';
+import GradeBadge from '../components/GradeBadge.astro';
+import Change from '../components/Change.astro';
+import { loadCards, loadSets, allSales, mover, gradeStats, cardTitle, firstImage, TODAY } from '../lib/data';
+import { url, money, dateLong, dateShort, saleType, saleSource, pct } from '../lib/format';
+
+const cards = loadCards();
+const sets = loadSets();
+const sales = allSales();
+const notable = sales.filter((r) => r.sale.price >= 1000).slice(0, 10);
+
+const movers = cards.flatMap((card) => Object.entries(card.grades).map(([grade, g]) => ({ card, grade, m: mover(g) }))).filter((x) => x.m);
+const up = [...movers].sort((a, b) => b.m!.pct - a.m!.pct).slice(0, 5);
+const down = [...movers].sort((a, b) => a.m!.pct - b.m!.pct).slice(0, 5);
+
+const valued = cards.flatMap((card) => Object.entries(card.grades).map(([grade, g]) => ({ card, grade, s: gradeStats(g) })))
+  .filter((x) => x.s.last).sort((a, b) => b.s.last!.price - a.s.last!.price).slice(0, 8);
+
+const setCounts = sets.map((s) => {
+  const slots = s.sections.flatMap((x) => x.slots);
+  return { ...s, total: slots.length, tracked: slots.filter((x) => x.card_id).length };
+});
+const totalSales = sales.length;
+const latest = sales[0]?.sale.date;
+---
+<Base title="Riftbound graded market data" current="home">
+  <section class="hero">
+    <div class="eyebrow">Riftbound market report</div>
+    <h1 class="page-title">Price Check</h1>
+    <p class="lede">Completed sales for PSA and BGS Riftbound slabs, tracked card by card. {cards.length} cards, {totalSales.toLocaleString('en-US')} sales, updated {dateLong(latest)}.</p>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Recent notable sales</h2><span class="count">$1,000 and up</span></div>
+    <div class="panel" style="padding:8px 4px">
+      <table class="table">
+        <thead><tr><th>Card</th><th>Grade</th><th class="num">Price</th><th>Type</th><th>Date</th></tr></thead>
+        <tbody>
+          {notable.map(({ card, grade, sale }) => (
+            <tr>
+              <td><a href={url(`/cards/${card.card.id}/`)}><strong>{card.card.name}</strong> <span class="muted">{card.card.title ? card.card.title + ' · ' : ''}{card.card.set_code} #{card.card.number}</span></a></td>
+              <td><GradeBadge grade={grade} /></td>
+              <td class="num"><strong>{money(sale.price)}</strong></td>
+              <td class="muted">{saleType(sale.type)} · {saleSource(sale.source)}</td>
+              <td class="muted">{dateShort(sale.date)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section two-col">
+    <div>
+      <div class="section-head"><h2>Biggest movers · 30 days</h2><span class="count">median vs prior 30 days</span></div>
+      <div class="panel" style="padding:8px 4px">
+        <table class="table">
+          <tbody>
+            {[...up, ...down].map(({ card, grade, m }) => (
+              <tr>
+                <td><a href={url(`/cards/${card.card.id}/`)}><strong>{card.card.name}</strong> <span class="muted">{card.card.title ?? ''} · {card.card.set_code} #{card.card.number}</span></a></td>
+                <td><GradeBadge grade={grade} /></td>
+                <td class="num"><Change value={m!.pct} /><div class="small muted">{money(m!.before)} → {money(m!.now)}</div></td>
+              </tr>
+            ))}
+            {movers.length === 0 && <tr><td class="muted">Not enough sales yet to compare two 30-day windows.</td></tr>}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div>
+      <div class="section-head"><h2>Highest last sale</h2></div>
+      <div class="panel" style="padding:8px 4px">
+        <table class="table">
+          <tbody>
+            {valued.map(({ card, grade, s }) => (
+              <tr>
+                <td><a href={url(`/cards/${card.card.id}/`)}><strong>{card.card.name}</strong> <span class="muted">{card.card.title ?? ''} · {card.card.set_code} #{card.card.number}</span></a></td>
+                <td><GradeBadge grade={grade} /></td>
+                <td class="num"><strong>{money(s.last!.price)}</strong><div class="small"><Change value={s.vsPrev} chip /></div></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Sets</h2></div>
+    <div class="set-grid">
+      {setCounts.map((s) => (
+        <a class="panel set-card" href={url(`/sets/${s.code.toLowerCase()}/`)}>
+          <div class="eyebrow">{s.code}</div>
+          <h3>{s.name}</h3>
+          <div class="muted small">{s.tracked} of {s.total} slots tracked{s.released ? ` · released ${dateLong(s.released)}` : ''}</div>
+          <div class="bar"><span style={`width:${s.total ? Math.round((100 * s.tracked) / s.total) : 0}%`}></span></div>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { padding: 40px 0 8px; }
+  .set-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+  .set-card h3 { font-size: 22px; margin: 4px 0 6px; }
+  .set-card:hover { border-color: #3a5182; }
+  .bar { height: 6px; border-radius: 3px; background: var(--navy-2); margin-top: 12px; overflow: hidden; }
+  .bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--gold), var(--gold-2)); }
+</style>

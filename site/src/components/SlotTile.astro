@@ -1,0 +1,43 @@
+---
+import type { Slot } from '../lib/data';
+import { cardById, gradeStats, firstImage } from '../lib/data';
+import { url, money } from '../lib/format';
+import Change from './Change.astro';
+import GradeBadge from './GradeBadge.astro';
+interface Props { slot: Slot; setCode: string }
+const { slot, setCode } = Astro.props;
+const card = slot.card_id ? cardById(slot.card_id) : undefined;
+const numberText = slot.number ? (slot.number.includes('-') ? slot.number : `#${slot.number}`) : '';
+let best: { grade: string; price: number; vs: number | null } | null = null;
+if (card) {
+  for (const [grade, g] of Object.entries(card.grades)) {
+    const s = gradeStats(g);
+    if (s.last && (!best || s.last.price > best.price)) best = { grade, price: s.last.price, vs: s.vsPrev };
+  }
+}
+const img = card ? firstImage(card) : null;
+---
+{card ? (
+  <a class="tile" href={url(`/cards/${card.card.id}/`)}>
+    <div class="art">{img ? <img src={url('/' + img)} alt={`${card.card.name} slab`} loading="lazy" /> : <span class="muted small">No photo</span>}</div>
+    <div>
+      <div class="name">{card.card.name}{card.card.title ? <span class="muted"> · {card.card.title}</span> : null}</div>
+      <div class="sub">{numberText}{slot.variant ? ` · ${slot.variant}` : slot.rarity ? ` · ${slot.rarity}` : ''}</div>
+    </div>
+    {best && (
+      <div class="row">
+        <span class="price">{money(best.price)}</span>
+        <Change value={best.vs} chip />
+      </div>
+    )}
+    {best && <GradeBadge grade={best.grade} />}
+  </a>
+) : (
+  <div class="tile empty">
+    <div class="art">No data yet</div>
+    <div>
+      <div class="name">{slot.name}{slot.title ? <span class="muted"> · {slot.title}</span> : null}</div>
+      <div class="sub">{numberText}{slot.variant ? ` · ${slot.variant}` : slot.rarity ? ` · ${slot.rarity}` : ''}</div>
+    </div>
+  </div>
+)}
