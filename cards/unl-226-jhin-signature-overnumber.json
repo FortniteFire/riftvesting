@@ -1,0 +1,107 @@
+{
+ "card": {
+  "id": "unl-226-jhin-signature-overnumber",
+  "game": "Riftbound",
+  "set": "Unleashed",
+  "set_code": "UNL",
+  "number": "226*",
+  "name": "Jhin",
+  "variant": "Signature Overnumber",
+  "alt_title": "2026 Riftbound: League of Legends TCG Unleashed Jhin - Virtuoso Signature #226*",
+  "title": "Virtuoso"
+ },
+ "pops": {
+  "as_of": "2026-09-05",
+  "source": "alt",
+  "PSA": {
+   "10": 48,
+   "9": 5
+  },
+  "BGS": {
+   "BL": 1,
+   "10": 2,
+   "9.5": 24,
+   "9": 1
+  }
+ },
+ "grades": {
+  "PSA 10": {
+   "alt_item_id": "1f064dd5-831c-4b15-b911-360d37984138",
+   "alt_url": "https://alt.xyz/itm/1f064dd5-831c-4b15-b911-360d37984138/research",
+   "alt_value": {
+    "as_of": "2026-09-05",
+    "value": 2653,
+    "low": 2136,
+    "high": 3295
+   },
+   "last_checked": "2026-09-05",
+   "image": "images/psa-161869980.png",
+   "sales": [
+    {
+     "date": "2026-09-01",
+     "price": 1850,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-24",
+     "price": 2850,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-13",
+     "price": 3000,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-10",
+     "price": 3000,
+     "type": "buy_now",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-10",
+     "price": 2950,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-07",
+     "price": 3200,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-13",
+     "price": 1999,
+     "type": "buy_now",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-08",
+     "price": 1600,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,181 @@
+{
+ "card": {
+  "id": "unl-234-diana-signature-overnumber",
+  "game": "Riftbound",
+  "set": "Unleashed",
+  "set_code": "UNL",
+  "number": "234*",
+  "name": "Diana",
+  "variant": "Signature Overnumber",
+  "alt_title": "2026 Riftbound League of Legends Unleashed Signature Overnumber Diana #234*",
+  "title": "Scorn of the Moon"
+ },
+ "pops": {
+  "as_of": "2026-09-05",
+  "source": "alt",
+  "PSA": {
+   "10": 144,
+   "9": 14,
+   "8": 1
+  },
+  "BGS": {
+   "BL": 2,
+   "10": 19,
+   "9.5": 67,
+   "9": 3,
+   "8.5": 1
+  }
+ },
+ "grades": {
+  "PSA 10": {
+   "alt_item_id": "bc4c2dae-523b-4de0-9c9b-175602d20344",
+   "alt_url": "https://alt.xyz/itm/bc4c2dae-523b-4de0-9c9b-175602d20344/research",
+   "alt_value": {
+    "as_of": "2026-09-05",
+    "value": 4998,
+    "low": 4216,
+    "high": 5925
+   },
+   "last_checked": "2026-09-05",
+   "image": "images/psa-173587887.png",
+   "sales": [
+    {
+     "date": "2026-09-03",
+     "price": 4300,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-30",
+     "price": 4575,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-28",
+     "price": 4950,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-20",
+     "price": 5200,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-20",
+     "price": 3600,
+     "type": "auction",
+     "source": "alt",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-15",
+     "price": 4450,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-12",
+     "price": 4650,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-11",
+     "price": 6750,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-01",
+     "price": 6200,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-27",
+     "price": 5988,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-23",
+     "price": 5200,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-21",
+     "price": 5040,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-15",
+     "price": 5100,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-10",
+     "price": 4350,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-07",
+     "price": 3850,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-25",
+     "price": 3850,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-23",
+     "price": 2550,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    }
+   ]
+  }
+ }
+}

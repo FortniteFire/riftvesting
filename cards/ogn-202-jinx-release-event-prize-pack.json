@@ -1,0 +1,803 @@
+{
+ "card": {
+  "id": "ogn-202-jinx-release-event-prize-pack",
+  "game": "Riftbound",
+  "set": "Origins",
+  "set_code": "OGN",
+  "number": "202",
+  "name": "Jinx",
+  "variant": "Release Event Prize Pack",
+  "alt_title": "2025 Riftbound League of Legends Origins Release Event Prize Pack Jinx #202",
+  "title": "Rebel"
+ },
+ "pops": {
+  "as_of": "2026-09-05",
+  "source": "alt",
+  "PSA": {
+   "10": 545,
+   "9": 137,
+   "8": 8
+  },
+  "BGS": {
+   "10": 15,
+   "9.5": 95,
+   "9": 19,
+   "8.5": 4,
+   "8": 2
+  },
+  "CGC": {
+   "BL": 6,
+   "10": 12,
+   "9": 1,
+   "8.5": 1
+  }
+ },
+ "grades": {
+  "PSA 10": {
+   "alt_item_id": "28375e8c-6542-40fd-a125-ae04cd167e62",
+   "alt_url": "https://alt.xyz/itm/28375e8c-6542-40fd-a125-ae04cd167e62/research",
+   "alt_value": {
+    "as_of": "2026-09-05",
+    "value": 476,
+    "low": 409,
+    "high": 555
+   },
+   "last_checked": "2026-09-05",
+   "image": "images/psa-173623461.png",
+   "sales": [
+    {
+     "date": "2026-09-01",
+     "price": 700,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-09-01",
+     "price": 465,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-09-01",
+     "price": 408,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-30",
+     "price": 420,
+     "type": "auction",
+     "source": "pwcc",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-28",
+     "price": 520,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-26",
+     "price": 438,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-24",
+     "price": 760,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-23",
+     "price": 676,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-23",
+     "price": 540,
+     "type": "auction",
+     "source": "pwcc",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-22",
+     "price": 790,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-18",
+     "price": 710,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-17",
+     "price": 610,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-17",
+     "price": 570,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-17",
+     "price": 470,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-16",
+     "price": 510,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-15",
+     "price": 560,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-13",
+     "price": 810,
+     "type": "auction",
+     "source": "alt",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-13",
+     "price": 810,
+     "type": "auction",
+     "source": "alt",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-13",
+     "price": 810,
+     "type": "auction",
+     "source": "alt",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-13",
+     "price": 810,
+     "type": "auction",
+     "source": "alt",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-13",
+     "price": 810,
+     "type": "auction",
+     "source": "alt",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-13",
+     "price": 810,
+     "type": "auction",
+     "source": "alt",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-13",
+     "price": 810,
+     "type": "auction",
+     "source": "alt",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-13",
+     "price": 810,
+     "type": "auction",
+     "source": "alt",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-13",
+     "price": 810,
+     "type": "auction",
+     "source": "alt",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-12",
+     "price": 788,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-12",
+     "price": 715,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-11",
+     "price": 700,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-10",
+     "price": 510,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-09",
+     "price": 1110,
+     "type": "auction",
+     "source": "pwcc",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-09",
+     "price": 732,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-07",
+     "price": 700,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-07",
+     "price": 690,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-06",
+     "price": 840,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-06",
+     "price": 730,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-05",
+     "price": 1159,
+     "type": "best_offer",
+     "source": "pwcc",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-04",
+     "price": 1960,
+     "type": "buy_now",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-03",
+     "price": 950,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-02",
+     "price": 920,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-29",
+     "price": 970,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-26",
+     "price": 1130,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-26",
+     "price": 1075,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-26",
+     "price": 999,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-24",
+     "price": 1200,
+     "type": "buy_now",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-24",
+     "price": 1145,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-22",
+     "price": 1250,
+     "type": "buy_now",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-22",
+     "price": 1225,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-22",
+     "price": 1199,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-22",
+     "price": 1193,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-19",
+     "price": 1525,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-19",
+     "price": 1375,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-17",
+     "price": 999,
+     "type": "best_offer",
+     "source": "pwcc",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-16",
+     "price": 999,
+     "type": "best_offer",
+     "source": "pwcc",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-15",
+     "price": 450,
+     "type": "best_offer",
+     "source": "pwcc",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-13",
+     "price": 800,
+     "type": "best_offer",
+     "source": "pwcc",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-12",
+     "price": 750,
+     "type": "auction",
+     "source": "pwcc",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-12",
+     "price": 725,
+     "type": "buy_now",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-12",
+     "price": 725,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-12",
+     "price": 599,
+     "type": "best_offer",
+     "source": "pwcc",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-09",
+     "price": 600,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-07",
+     "price": 450,
+     "type": "best_offer",
+     "source": "pwcc",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-06",
+     "price": 595,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-04",
+     "price": 550,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-02",
+     "price": 350,
+     "type": "best_offer",
+     "source": "pwcc",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-01",
+     "price": 338,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-30",
+     "price": 343,
+     "type": "best_offer",
+     "source": "pwcc",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-24",
+     "price": 330,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-23",
+     "price": 460,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-22",
+     "price": 332,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-21",
+     "price": 346,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-17",
+     "price": 366,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-15",
+     "price": 330,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-15",
+     "price": 325,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-14",
+     "price": 381,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-13",
+     "price": 381,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-09",
+     "price": 355,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-09",
+     "price": 351,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-08",
+     "price": 365,
+     "type": "buy_now",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-06",
+     "price": 357,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-06-02",
+     "price": 497,
+     "type": "buy_now",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-05-30",
+     "price": 228,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-05-24",
+     "price": 410,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-05-21",
+     "price": 370,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-05-11",
+     "price": 250,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-05-10",
+     "price": 314,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-05-07",
+     "price": 375,
+     "type": "buy_now",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-05-02",
+     "price": 300,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-04-22",
+     "price": 300,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-04-18",
+     "price": 325,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-03-28",
+     "price": 400,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-03-21",
+     "price": 371,
+     "type": "buy_now",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-03-07",
+     "price": 284,
+     "type": "buy_now",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-01-26",
+     "price": 200,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-01-25",
+     "price": 201,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    }
+   ]
+  }
+ }
+}

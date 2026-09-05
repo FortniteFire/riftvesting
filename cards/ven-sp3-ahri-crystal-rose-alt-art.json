@@ -1,0 +1,87 @@
+{
+ "card": {
+  "id": "ven-sp3-ahri-crystal-rose-alt-art",
+  "game": "Riftbound",
+  "set": "Vendetta",
+  "set_code": "VEN",
+  "number": "SP3",
+  "name": "Ahri",
+  "variant": "Crystal Rose Alt Art",
+  "alt_title": "2026 Riftbound League of Legends Vendetta Inquisitive Ahri #SP3",
+  "title": "Inquisitive"
+ },
+ "pops": {
+  "as_of": "2026-09-05",
+  "source": "alt",
+  "PSA": {
+   "10": 19,
+   "9": 1
+  },
+  "BGS": {
+   "BL": 1,
+   "10": 11,
+   "9.5": 20
+  },
+  "CGC": {
+   "BL": 22,
+   "10": 9,
+   "9": 8
+  }
+ },
+ "grades": {
+  "PSA 10": {
+   "alt_item_id": "2478a536-43ce-4098-8172-d37e897a9d03",
+   "alt_url": "https://alt.xyz/itm/2478a536-43ce-4098-8172-d37e897a9d03/research",
+   "alt_value": {
+    "as_of": "2026-09-05",
+    "value": 854,
+    "low": 716,
+    "high": 1018
+   },
+   "last_checked": "2026-09-05",
+   "image": "images/psa-173824004.png",
+   "sales": [
+    {
+     "date": "2026-09-03",
+     "price": 765,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-09-02",
+     "price": 710,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-09-01",
+     "price": 760,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-09-01",
+     "price": 760,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-29",
+     "price": 800,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    }
+   ]
+  }
+ }
+}

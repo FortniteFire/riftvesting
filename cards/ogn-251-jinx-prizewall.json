@@ -1,0 +1,131 @@
+{
+ "card": {
+  "id": "ogn-251-jinx-prizewall",
+  "game": "Riftbound",
+  "set": "Origins",
+  "set_code": "OGN",
+  "number": "251",
+  "name": "Jinx",
+  "variant": "Prizewall",
+  "alt_title": "2025 Riftbound: League of Legends Ogn-Origins Metal Champion Legends Prizewall Jinx Loose Cannon #251",
+  "title": "Loose Cannon"
+ },
+ "pops": {
+  "as_of": "2026-09-05",
+  "source": "alt",
+  "PSA": {
+   "10": 62,
+   "9": 18,
+   "8": 2
+  },
+  "BGS": {
+   "10": 3,
+   "9.5": 18,
+   "9": 5
+  }
+ },
+ "grades": {
+  "PSA 10": {
+   "alt_item_id": "95e7fd42-44da-4b85-bbdb-f753d16406dc",
+   "alt_url": "https://alt.xyz/itm/95e7fd42-44da-4b85-bbdb-f753d16406dc/research",
+   "alt_value": {
+    "as_of": "2026-09-05",
+    "value": 11044,
+    "low": 8847,
+    "high": 13788
+   },
+   "last_checked": "2026-09-05",
+   "image": "images/psa-168328925.png",
+   "sales": [
+    {
+     "date": "2026-08-28",
+     "price": 11100,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-28",
+     "price": 8988,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-28",
+     "price": 8100,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-25",
+     "price": 11150,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-19",
+     "price": 19500,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-16",
+     "price": 15238,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-10",
+     "price": 13000,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-05-12",
+     "price": 2550,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-05-06",
+     "price": 2175,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-04-17",
+     "price": 3000,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2025-12-28",
+     "price": 2687,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    }
+   ]
+  }
+ }
+}

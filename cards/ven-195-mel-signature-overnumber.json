@@ -1,0 +1,60 @@
+{
+ "card": {
+  "id": "ven-195-mel-signature-overnumber",
+  "game": "Riftbound",
+  "set": "Vendetta",
+  "set_code": "VEN",
+  "number": "195*",
+  "name": "Mel",
+  "variant": "Signature Overnumber",
+  "alt_title": "2026 Riftbound: League of Legends Ven-Vendetta Signature Overnumber Mel Soul's Reflection #195*",
+  "title": "Soul's Reflection"
+ },
+ "pops": {
+  "as_of": "2026-09-05",
+  "source": "alt",
+  "PSA": {
+   "10": 17
+  }
+ },
+ "grades": {
+  "PSA 10": {
+   "alt_item_id": "8062ba8a-71df-4162-97d3-0097b87c8590",
+   "alt_url": "https://alt.xyz/itm/8062ba8a-71df-4162-97d3-0097b87c8590/research",
+   "alt_value": {
+    "as_of": "2026-09-05",
+    "value": 2941,
+    "low": 2129,
+    "high": 4062
+   },
+   "last_checked": "2026-09-05",
+   "image": "images/psa-173340198.png",
+   "sales": [
+    {
+     "date": "2026-09-03",
+     "price": 2650,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-09-03",
+     "price": 2550,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-09-01",
+     "price": 3150,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    }
+   ]
+  }
+ }
+}

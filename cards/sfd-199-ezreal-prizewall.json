@@ -1,0 +1,51 @@
+{
+ "card": {
+  "id": "sfd-199-ezreal-prizewall",
+  "game": "Riftbound",
+  "set": "Spiritforged",
+  "set_code": "SFD",
+  "number": "199",
+  "name": "Ezreal",
+  "variant": "Prizewall",
+  "alt_title": "2026 League of Legends TCG Promos Ezreal - Prodigal Explorer Metal/(Regional Qualifer - Prize Wall) #199",
+  "title": "Prodigal Explorer",
+  "notes": "ALT catalogues this cert under 'Metal/(Regional Qualifier - Prize Wall)'; PSA label reads 'PRIZEWALL'. Check that the ALT item is the same card before publishing."
+ },
+ "pops": {
+  "as_of": "2026-09-05",
+  "source": "alt",
+  "PSA": {
+   "10": 37,
+   "9": 2
+  },
+  "BGS": {
+   "10": 2,
+   "9.5": 5,
+   "9": 1
+  }
+ },
+ "grades": {
+  "PSA 10": {
+   "alt_item_id": "147a8eb0-2fae-4358-bf9f-f8606cdd88a4",
+   "alt_url": "https://alt.xyz/itm/147a8eb0-2fae-4358-bf9f-f8606cdd88a4/research",
+   "alt_value": {
+    "as_of": "2026-09-05",
+    "value": 3609,
+    "low": 2339,
+    "high": 5567
+   },
+   "last_checked": "2026-09-05",
+   "image": "images/psa-173825742.png",
+   "sales": [
+    {
+     "date": "2026-08-21",
+     "price": 3550,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    }
+   ]
+  }
+ }
+}

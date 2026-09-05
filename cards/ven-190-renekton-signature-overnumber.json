@@ -1,0 +1,56 @@
+{
+ "card": {
+  "id": "ven-190-renekton-signature-overnumber",
+  "game": "Riftbound",
+  "set": "Vendetta",
+  "set_code": "VEN",
+  "number": "190*",
+  "name": "Renekton",
+  "variant": "Signature Overnumber",
+  "alt_title": "2026 Riftbound: League of Legends TCG Vendetta Renekton - Butcher of the Sands Signature #190*",
+  "title": "Butcher of the Sands"
+ },
+ "pops": {
+  "as_of": "2026-09-05",
+  "source": "alt",
+  "PSA": {
+   "10": 8,
+   "9": 1
+  },
+  "BGS": {
+   "9.5": 4
+  }
+ },
+ "grades": {
+  "PSA 10": {
+   "alt_item_id": "6ca86c18-534d-4e6c-9391-abeb2dc3a499",
+   "alt_url": "https://alt.xyz/itm/6ca86c18-534d-4e6c-9391-abeb2dc3a499/research",
+   "alt_value": {
+    "as_of": "2026-09-05",
+    "value": 1189,
+    "low": 876,
+    "high": 1614
+   },
+   "last_checked": "2026-09-05",
+   "image": "images/psa-173823996.png",
+   "sales": [
+    {
+     "date": "2026-09-01",
+     "price": 780,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-29",
+     "price": 1225,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    }
+   ]
+  }
+ }
+}

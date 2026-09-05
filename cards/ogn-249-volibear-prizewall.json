@@ -1,0 +1,107 @@
+{
+ "card": {
+  "id": "ogn-249-volibear-prizewall",
+  "game": "Riftbound",
+  "set": "Origins",
+  "set_code": "OGN",
+  "number": "249",
+  "name": "Volibear",
+  "variant": "Prizewall",
+  "alt_title": "2025 League of Legends TCG Promos Volibear - Relentless Storm Metal/(Regional Qualifer Houston ' - Prize Wall) #249",
+  "title": "Relentless Storm",
+  "notes": "ALT catalogues this cert under 'Metal/(Regional Qualifier Houston - Prize Wall)'; PSA label reads 'PRIZEWALL'. Same pattern as the Ezreal Prizewall."
+ },
+ "pops": {
+  "as_of": "2026-09-05",
+  "source": "alt",
+  "PSA": {
+   "10": 25,
+   "9": 3,
+   "8.5": 1
+  },
+  "BGS": {
+   "10": 1,
+   "9.5": 16
+  }
+ },
+ "grades": {
+  "PSA 10": {
+   "alt_item_id": "5193b30e-f927-410e-9b71-ecb87155b699",
+   "alt_url": "https://alt.xyz/itm/5193b30e-f927-410e-9b71-ecb87155b699/research",
+   "alt_value": {
+    "as_of": "2026-09-05",
+    "value": 2638,
+    "low": 2109,
+    "high": 3301
+   },
+   "last_checked": "2026-09-05",
+   "image": "images/psa-174809579.png",
+   "sales": [
+    {
+     "date": "2026-08-31",
+     "price": 2550,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-31",
+     "price": 2026,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-09",
+     "price": 3600,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-05",
+     "price": 2200,
+     "type": "buy_now",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-03",
+     "price": 1800,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-07-03",
+     "price": 1699,
+     "type": "buy_now",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-05-12",
+     "price": 1376,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-05-02",
+     "price": 1125,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    }
+   ]
+  }
+ }
+}

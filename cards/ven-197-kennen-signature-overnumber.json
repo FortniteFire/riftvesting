@@ -1,0 +1,81 @@
+{
+ "card": {
+  "id": "ven-197-kennen-signature-overnumber",
+  "game": "Riftbound",
+  "set": "Vendetta",
+  "set_code": "VEN",
+  "number": "197*",
+  "name": "Kennen",
+  "variant": "Signature Overnumber",
+  "alt_title": "2026 Riftbound: League of Legends TCG Vendetta Kennen - Heart of the Tempest Signature #197*",
+  "title": "Heart of the Tempest"
+ },
+ "pops": {
+  "as_of": "2026-09-05",
+  "source": "alt",
+  "PSA": {
+   "10": 24,
+   "9": 4
+  },
+  "BGS": {
+   "10": 1,
+   "9.5": 11
+  }
+ },
+ "grades": {
+  "PSA 10": {
+   "alt_item_id": "f7d45b03-a726-400c-9025-720b616a7448",
+   "alt_url": "https://alt.xyz/itm/f7d45b03-a726-400c-9025-720b616a7448/research",
+   "alt_value": {
+    "as_of": "2026-09-05",
+    "value": 2788,
+    "low": 2108,
+    "high": 3687
+   },
+   "last_checked": "2026-09-05",
+   "image": "images/psa-173756676.png",
+   "sales": [
+    {
+     "date": "2026-09-03",
+     "price": 1535,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-09-02",
+     "price": 1850,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-29",
+     "price": 2125,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-19",
+     "price": 3128,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-12",
+     "price": 2400,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    }
+   ]
+  }
+ }
+}

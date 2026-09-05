@@ -1,0 +1,95 @@
+{
+ "card": {
+  "id": "ven-191-zed-signature-overnumber",
+  "game": "Riftbound",
+  "set": "Vendetta",
+  "set_code": "VEN",
+  "number": "191*",
+  "name": "Zed",
+  "variant": "Signature Overnumber",
+  "alt_title": "2026 Vendetta Signature Zed #191*",
+  "title": "Master of Shadows"
+ },
+ "pops": {
+  "as_of": "2026-09-05",
+  "source": "alt",
+  "PSA": {
+   "10": 53,
+   "9": 1
+  },
+  "BGS": {
+   "10": 2,
+   "9.5": 13
+  },
+  "CGC": {
+   "10": 1
+  }
+ },
+ "grades": {
+  "PSA 10": {
+   "alt_item_id": "5d896336-a26f-491a-9ba2-caba79b26ff2",
+   "alt_url": "https://alt.xyz/itm/5d896336-a26f-491a-9ba2-caba79b26ff2/research",
+   "alt_value": null,
+   "last_checked": "2026-09-05",
+   "image": "images/psa-174241808.png",
+   "sales": [
+    {
+     "date": "2026-09-03",
+     "price": 3000,
+     "type": "buy_now",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-09-02",
+     "price": 2650,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-09-02",
+     "price": 2550,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-09-01",
+     "price": 3800,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-29",
+     "price": 6300,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-29",
+     "price": 6111,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-28",
+     "price": 5001,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    }
+   ]
+  }
+ }
+}

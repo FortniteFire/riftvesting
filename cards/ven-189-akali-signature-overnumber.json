@@ -1,0 +1,107 @@
+{
+ "card": {
+  "id": "ven-189-akali-signature-overnumber",
+  "game": "Riftbound",
+  "set": "Vendetta",
+  "set_code": "VEN",
+  "number": "189*",
+  "name": "Akali",
+  "variant": "Signature Overnumber",
+  "alt_title": "2026 Riftbound: League of Legends TCG Vendetta Akali - Rogue Assassin Signature #189*",
+  "title": "Rogue Assassin"
+ },
+ "pops": {
+  "as_of": "2026-09-05",
+  "source": "alt",
+  "PSA": {
+   "10": 79,
+   "9": 10,
+   "8": 1
+  },
+  "BGS": {
+   "10": 2,
+   "9.5": 24,
+   "9": 2
+  }
+ },
+ "grades": {
+  "PSA 10": {
+   "alt_item_id": "37f857f0-8ddb-47c1-8924-1ca175fa12db",
+   "alt_url": "https://alt.xyz/itm/37f857f0-8ddb-47c1-8924-1ca175fa12db/research",
+   "alt_value": {
+    "as_of": "2026-09-05",
+    "value": 12084,
+    "low": 9647,
+    "high": 15136
+   },
+   "last_checked": "2026-09-05",
+   "image": "images/psa-173228966.png",
+   "sales": [
+    {
+     "date": "2026-09-03",
+     "price": 8388,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-09-03",
+     "price": 8100,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-09-02",
+     "price": 7851,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-09-02",
+     "price": 7500,
+     "type": "best_offer",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-09-01",
+     "price": 8661,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-30",
+     "price": 13100,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-30",
+     "price": 9500,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    },
+    {
+     "date": "2026-08-29",
+     "price": 13088,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    }
+   ]
+  }
+ }
+}

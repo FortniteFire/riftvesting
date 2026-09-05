@@ -1,0 +1,46 @@
+{
+ "card": {
+  "id": "sfd-201-renata-glasc-prizewall",
+  "game": "Riftbound",
+  "set": "Spiritforged",
+  "set_code": "SFD",
+  "number": "201",
+  "name": "Renata Glasc",
+  "variant": "Prizewall",
+  "alt_title": "2026 Riftbound: League of Legends Sfd-Spiritforged Plated Legends Prizewall Renata Glasc Chem Baroness #201",
+  "title": "Chem-Baroness"
+ },
+ "pops": {
+  "as_of": "2026-09-05",
+  "source": "alt",
+  "PSA": {
+   "10": 6,
+   "9": 3,
+   "8": 1
+  }
+ },
+ "grades": {
+  "PSA 10": {
+   "alt_item_id": "62fa86e2-5298-4ce0-b0d1-f3985e9ed680",
+   "alt_url": "https://alt.xyz/itm/62fa86e2-5298-4ce0-b0d1-f3985e9ed680/research",
+   "alt_value": {
+    "as_of": "2026-09-05",
+    "value": 876,
+    "low": 502,
+    "high": 1528
+   },
+   "last_checked": "2026-09-05",
+   "image": "images/psa-174809578.png",
+   "sales": [
+    {
+     "date": "2026-05-17",
+     "price": 710,
+     "type": "auction",
+     "source": "ebay",
+     "via": "alt",
+     "unpaid": false
+    }
+   ]
+  }
+ }
+}
