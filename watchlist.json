@@ -1,0 +1,412 @@
+{
+ "updated": "2026-09-05",
+ "items": [
+  {
+   "card_id": "ogn-197b-teemo-nexus-night-pack",
+   "grade": "PSA 10",
+   "alt_item_id": "315db78b-191b-4197-b3d0-c11e66cc5218",
+   "alt_url": "https://alt.xyz/itm/315db78b-191b-4197-b3d0-c11e66cc5218/research",
+   "last_seen": {
+    "date": "2026-09-04",
+    "price": 3850,
+    "type": "buy_now"
+   }
+  },
+  {
+   "card_id": "unl-238-baron-nashor-ultimate-rare",
+   "grade": "PSA 10",
+   "alt_item_id": "e95657df-e282-4828-91a6-0817c1c3ab84",
+   "alt_url": "https://alt.xyz/itm/e95657df-e282-4828-91a6-0817c1c3ab84/research",
+   "last_seen": {
+    "date": "2026-09-03",
+    "price": 3950,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "ven-191-zed-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "5d896336-a26f-491a-9ba2-caba79b26ff2",
+   "alt_url": "https://alt.xyz/itm/5d896336-a26f-491a-9ba2-caba79b26ff2/research",
+   "last_seen": {
+    "date": "2026-09-03",
+    "price": 3000,
+    "type": "buy_now"
+   }
+  },
+  {
+   "card_id": "ogn-202-jinx-release-event-prize-pack",
+   "grade": "PSA 10",
+   "alt_item_id": "28375e8c-6542-40fd-a125-ae04cd167e62",
+   "alt_url": "https://alt.xyz/itm/28375e8c-6542-40fd-a125-ae04cd167e62/research",
+   "last_seen": {
+    "date": "2026-09-01",
+    "price": 700,
+    "type": "best_offer"
+   }
+  },
+  {
+   "card_id": "ven-189-akali-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "37f857f0-8ddb-47c1-8924-1ca175fa12db",
+   "alt_url": "https://alt.xyz/itm/37f857f0-8ddb-47c1-8924-1ca175fa12db/research",
+   "last_seen": {
+    "date": "2026-09-03",
+    "price": 8388,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "sfd-235-yasuo-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "69fd57f1-e2e2-4aec-84cc-659f5a1364e6",
+   "alt_url": "https://alt.xyz/itm/69fd57f1-e2e2-4aec-84cc-659f5a1364e6/research",
+   "last_seen": {
+    "date": "2026-09-01",
+    "price": 1275,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "ogn-263a-teemo-worlds-bundle",
+   "grade": "PSA 10",
+   "alt_item_id": "5ae8dd01-f410-4d68-a5c5-d32b6f3e6eae",
+   "alt_url": "https://alt.xyz/itm/5ae8dd01-f410-4d68-a5c5-d32b6f3e6eae/research",
+   "last_seen": {
+    "date": "2026-09-04",
+    "price": 1699,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "ven-197-kennen-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "f7d45b03-a726-400c-9025-720b616a7448",
+   "alt_url": "https://alt.xyz/itm/f7d45b03-a726-400c-9025-720b616a7448/research",
+   "last_seen": {
+    "date": "2026-09-03",
+    "price": 1535,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "sfd-201-renata-glasc-prizewall",
+   "grade": "PSA 10",
+   "alt_item_id": "62fa86e2-5298-4ce0-b0d1-f3985e9ed680",
+   "alt_url": "https://alt.xyz/itm/62fa86e2-5298-4ce0-b0d1-f3985e9ed680/research",
+   "last_seen": {
+    "date": "2026-05-17",
+    "price": 710,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "ogn-310-sett-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "ec881874-33a7-440f-bbce-819c6238910d",
+   "alt_url": "https://alt.xyz/itm/ec881874-33a7-440f-bbce-819c6238910d/research",
+   "last_seen": {
+    "date": "2026-09-03",
+    "price": 1750,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "sfd-227-ahri-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "e18c48db-134d-41c7-917e-042712bf192a",
+   "alt_url": "https://alt.xyz/itm/e18c48db-134d-41c7-917e-042712bf192a/research",
+   "last_seen": {
+    "date": "2026-09-02",
+    "price": 8288,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "unl-229-vi-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "82a9e581-6051-4f16-94ee-9965337302d9",
+   "alt_url": "https://alt.xyz/itm/82a9e581-6051-4f16-94ee-9965337302d9/research",
+   "last_seen": {
+    "date": "2026-09-01",
+    "price": 1700,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "unl-231-master-yi-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "49616336-2ff3-4b83-a190-0c8690b22cd2",
+   "alt_url": "https://alt.xyz/itm/49616336-2ff3-4b83-a190-0c8690b22cd2/research",
+   "last_seen": {
+    "date": "2026-08-30",
+    "price": 1275,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "ven-195-mel-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "8062ba8a-71df-4162-97d3-0097b87c8590",
+   "alt_url": "https://alt.xyz/itm/8062ba8a-71df-4162-97d3-0097b87c8590/research",
+   "last_seen": {
+    "date": "2026-09-03",
+    "price": 2650,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "ogn-300-volibear-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "d0817ab6-b7a7-4fa5-9738-c17d2a8a7dda",
+   "alt_url": "https://alt.xyz/itm/d0817ab6-b7a7-4fa5-9738-c17d2a8a7dda/research",
+   "last_seen": {
+    "date": "2026-09-02",
+    "price": 1700,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "ogn-302-darius-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "81e2650a-720f-4a13-86a3-0c00583df60e",
+   "alt_url": "https://alt.xyz/itm/81e2650a-720f-4a13-86a3-0c00583df60e/research",
+   "last_seen": {
+    "date": "2026-08-30",
+    "price": 1380,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "ven-sp6-lux-crystal-rose-alt-art",
+   "grade": "PSA 10",
+   "alt_item_id": "b9dd2eae-119c-4931-8d32-a3ef0414a225",
+   "alt_url": "https://alt.xyz/itm/b9dd2eae-119c-4931-8d32-a3ef0414a225/research",
+   "last_seen": {
+    "date": "2026-09-02",
+    "price": 345,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "sfd-199-ezreal-prizewall",
+   "grade": "PSA 10",
+   "alt_item_id": "147a8eb0-2fae-4358-bf9f-f8606cdd88a4",
+   "alt_url": "https://alt.xyz/itm/147a8eb0-2fae-4358-bf9f-f8606cdd88a4/research",
+   "last_seen": {
+    "date": "2026-08-21",
+    "price": 3550,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "unl-235-leblanc-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "afa75ed5-4ed5-44ec-afa1-fd7243f3d83f",
+   "alt_url": "https://alt.xyz/itm/afa75ed5-4ed5-44ec-afa1-fd7243f3d83f/research",
+   "last_seen": {
+    "date": "2026-09-03",
+    "price": 2750,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "ogn-255-ahri-release-event-prize-pack",
+   "grade": "PSA 10",
+   "alt_item_id": "06651c78-7e1f-4a5a-b0e2-beb61ad2b79c",
+   "alt_url": "https://alt.xyz/itm/06651c78-7e1f-4a5a-b0e2-beb61ad2b79c/research",
+   "last_seen": {
+    "date": "2026-09-03",
+    "price": 725,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "sfd-239-soraka-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "bb9b27af-a35c-42d3-bd66-c5a186375d78",
+   "alt_url": "https://alt.xyz/itm/bb9b27af-a35c-42d3-bd66-c5a186375d78/research",
+   "last_seen": {
+    "date": "2026-09-03",
+    "price": 1500,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "sfd-227-ahri-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "477ca81b-f39e-4543-99ad-831f1d863c69",
+   "alt_url": "https://alt.xyz/itm/477ca81b-f39e-4543-99ad-831f1d863c69/research",
+   "last_seen": {
+    "date": "2026-09-03",
+    "price": 1300,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "ven-189-akali-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "c6e647e0-1bbc-440c-b90b-7074dc135f65",
+   "alt_url": "https://alt.xyz/itm/c6e647e0-1bbc-440c-b90b-7074dc135f65/research",
+   "last_seen": {
+    "date": "2026-08-16",
+    "price": 1250,
+    "type": "best_offer"
+   }
+  },
+  {
+   "card_id": "ven-190-renekton-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "6ca86c18-534d-4e6c-9391-abeb2dc3a499",
+   "alt_url": "https://alt.xyz/itm/6ca86c18-534d-4e6c-9391-abeb2dc3a499/research",
+   "last_seen": {
+    "date": "2026-09-01",
+    "price": 780,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "unl-226-jhin-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "1f064dd5-831c-4b15-b911-360d37984138",
+   "alt_url": "https://alt.xyz/itm/1f064dd5-831c-4b15-b911-360d37984138/research",
+   "last_seen": {
+    "date": "2026-09-01",
+    "price": 1850,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "sfd-223-vayne-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "646da728-240b-4546-8e8e-be6816fd5681",
+   "alt_url": "https://alt.xyz/itm/646da728-240b-4546-8e8e-be6816fd5681/research",
+   "last_seen": {
+    "date": "2026-09-04",
+    "price": 3200,
+    "type": "buy_now"
+   }
+  },
+  {
+   "card_id": "unl-230-lillia-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "9351b050-55a4-4b40-b183-0f132d332e71",
+   "alt_url": "https://alt.xyz/itm/9351b050-55a4-4b40-b183-0f132d332e71/research",
+   "last_seen": {
+    "date": "2026-09-03",
+    "price": 1450,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "unl-234-diana-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "bc4c2dae-523b-4de0-9c9b-175602d20344",
+   "alt_url": "https://alt.xyz/itm/bc4c2dae-523b-4de0-9c9b-175602d20344/research",
+   "last_seen": {
+    "date": "2026-09-03",
+    "price": 4300,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "ogn-249-volibear-prizewall",
+   "grade": "PSA 10",
+   "alt_item_id": "5193b30e-f927-410e-9b71-ecb87155b699",
+   "alt_url": "https://alt.xyz/itm/5193b30e-f927-410e-9b71-ecb87155b699/research",
+   "last_seen": {
+    "date": "2026-08-31",
+    "price": 2550,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "sfd-228-bard-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "c5fe4b00-7de4-4be1-848a-9137565329c9",
+   "alt_url": "https://alt.xyz/itm/c5fe4b00-7de4-4be1-848a-9137565329c9/research",
+   "last_seen": {
+    "date": "2026-09-01",
+    "price": 1035,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "sfd-230-teemo-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "883a0e59-fc27-4771-82e3-a187d99a97f6",
+   "alt_url": "https://alt.xyz/itm/883a0e59-fc27-4771-82e3-a187d99a97f6/research",
+   "last_seen": {
+    "date": "2026-09-03",
+    "price": 2400,
+    "type": "buy_now"
+   }
+  },
+  {
+   "card_id": "ogn-301-jinx-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "54440eed-6db9-48aa-a95c-c5d52045dd25",
+   "alt_url": "https://alt.xyz/itm/54440eed-6db9-48aa-a95c-c5d52045dd25/research",
+   "last_seen": {
+    "date": "2026-09-03",
+    "price": 3050,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "ogn-251-jinx-prizewall",
+   "grade": "PSA 10",
+   "alt_item_id": "95e7fd42-44da-4b85-bbdb-f753d16406dc",
+   "alt_url": "https://alt.xyz/itm/95e7fd42-44da-4b85-bbdb-f753d16406dc/research",
+   "last_seen": {
+    "date": "2026-08-28",
+    "price": 11100,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "ven-sp3-ahri-crystal-rose-alt-art",
+   "grade": "PSA 10",
+   "alt_item_id": "2478a536-43ce-4098-8172-d37e897a9d03",
+   "alt_url": "https://alt.xyz/itm/2478a536-43ce-4098-8172-d37e897a9d03/research",
+   "last_seen": {
+    "date": "2026-09-03",
+    "price": 765,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "ogn-202b-jinx-arcane-box-set",
+   "grade": "PSA 10",
+   "alt_item_id": "4f3a66e1-6cab-45b1-8952-30ee7067e627",
+   "alt_url": "https://alt.xyz/itm/4f3a66e1-6cab-45b1-8952-30ee7067e627/research",
+   "last_seen": {
+    "date": "2026-09-02",
+    "price": 550,
+    "type": "auction"
+   }
+  },
+  {
+   "card_id": "ogn-309-miss-fortune-signature-overnumber",
+   "grade": "PSA 10",
+   "alt_item_id": "37b6e37d-cf78-4f25-b6d8-ffb37473b8ef",
+   "alt_url": "https://alt.xyz/itm/37b6e37d-cf78-4f25-b6d8-ffb37473b8ef/research",
+   "last_seen": {
+    "date": "2026-09-04",
+    "price": 4800,
+    "type": "buy_now"
+   }
+  },
+  {
+   "card_id": "unl-197-diana-official-event-prize",
+   "grade": "PSA 10",
+   "alt_item_id": "0a15f709-c67b-4197-9218-12d8f4ac0e7f",
+   "alt_url": "https://alt.xyz/itm/0a15f709-c67b-4197-9218-12d8f4ac0e7f/research",
+   "last_seen": {
+    "date": "2026-09-03",
+    "price": 5000,
+    "type": "auction"
+   }
+  }
+ ]
+}
